@@ -10,7 +10,7 @@ const app = express();
 const bodyParser = require('body-parser')
 app.use(express.urlencoded({extended: true}))
 
-//Contact
+//Contact mail
 app.post('/submit', (req, res) =>{
 	
 	const name = req.body.name
@@ -50,7 +50,7 @@ res.end()
 
 
 
-//Request
+//Request mail
 app.post('/submitr', (req, res) =>{
 	
 	const emailr = req.body.emailr
@@ -81,9 +81,18 @@ transporter.sendMail(mailOptions, function(error, info){
   }
   
 });	
-	
-	return res.redirect('/submitr.html');
-res.end()
+
+
+//routing request sent
+//app.get('/request', function (req, res) {
+     fs.readFile('form.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+//});
+});
+	//return res.redirect('/submitr.html');
+//res.end()
 	
 })
 
