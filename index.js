@@ -143,6 +143,15 @@ app.get('/index', function (req, res) {
 });
 });
 
+//routing about
+app.get('/about', function (req, res) {
+     fs.readFile('about.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+});
+});
+
 
 
 
