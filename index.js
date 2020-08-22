@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: true}))
 
 
 
-app.post('/download', (req, res) =>{
+app.get('/download', (req, res) =>{
 	
 	const fname = req.body.nameDld
 	res.download('https://antikristeena.github.io/HS-webpage/Sounds/'+fname+'.mp3');

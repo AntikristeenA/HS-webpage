@@ -37,7 +37,7 @@ function searchF()
 		var dl = document.createElement('form');
 		dl.action ='/download';
 		dl.target ='_blank';
-		dl.method = 'post';
+		dl.method = 'get';
 		div.appendChild(dl);
 		
 		
