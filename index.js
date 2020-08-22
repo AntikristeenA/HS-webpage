@@ -117,7 +117,7 @@ app.get('/', (req, res) => {
 
 //routing contact
 app.get('/contact', function (req, res) {
-     fs.readFile('Contact.html', function(err, data) {
+     fs.readFile('contact.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -127,7 +127,7 @@ app.get('/contact', function (req, res) {
 
 //routing request
 app.get('/request', function (req, res) {
-     fs.readFile('form.html', function(err, data) {
+     fs.readFile('request.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -144,61 +144,6 @@ app.get('/index', function (req, res) {
 });
 
 
-/* 
-http.createServer(function (req, res) {
-  //Open a file on the server and return its content:
-  fs.readFile('index.html', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    return res.end();
-  });
-}).listen(8080);
- */
 
-
-
-
-
-/*
-
-
-
-app.get('/', (req, res) => {
-   res.render('index.html');
-});
-
-
-
-const port = 8080;
-
-app.listen(port, () => {
-  console.log(`Server running on port${port}`);
-});
-
-
-
-
-const { body,validationResult } = require('express-validator/check');
-const { sanitizeBody } = require('express-validator/filter');
-
-body('name', 'Empty name').isLength({ min: 1 }).withMessage('Name empty.'), 
-body('age', 'Invalid age').optional({ checkFalsy: true }).isISO8601(),
-sanitizeBody('name').trim().escape(),
-sanitizeBody('date').toDate(),
-
-(req, res, next) => {
-    // Extract the validation errors from a request.
-    const errors = validationResult(req);
-
-    if (!errors.isEmpty()) {
-        // There are errors. Render form again with sanitized values/errors messages.
-        // Error messages can be returned in an array using `errors.array()`.
-        }
-    else {
-        // Data from form is valid.
-    }
-}
- */
-//
 
 
