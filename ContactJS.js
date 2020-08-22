@@ -85,6 +85,8 @@ res.end()
 	
 })
 
+res.redirect('/index.html');
+
 /* 
 
 const port = 8080;
