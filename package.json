@@ -2,7 +2,7 @@
   "name": "howsounds",
   "version": "1.0.0",
   "description": "Howsounds official webpage",
-  "main": "index.html",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express-validator": "^6.6.1",
