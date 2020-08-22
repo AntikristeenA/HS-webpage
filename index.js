@@ -92,10 +92,13 @@ app.listen(port, () => console.log(`Server started on Port ${port}`));
 
 
 app.get('/', (req, res) => {
-   res.send('index.html');
+   fs.readFile('index.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
 });
 
-
+});
 var http = require('http');
 var fs = require('fs');
 
