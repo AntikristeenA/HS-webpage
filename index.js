@@ -9,26 +9,19 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 app.use(express.urlencoded({extended: true}))
-var queryF;
+
 
 //download
 
 
 
-
-app.get(queryF, function(req, res){
+app.post('/download', (req, res) =>{
 	
-var adr = queryF;
-var q = url.parse(adr, true);
-
-
-var qdata = q.query; 
-
-  res.download('https://antikristeena.github.io/HS-webpage/Sounds/'+qdata.name+'.mp3'); // Set disposition and send it.
+	const fname = req.body.nameDld
+	res.download('https://antikristeena.github.io/HS-webpage/Sounds/'+fname+'.mp3');
+	
+	
 });
-
-
-
 
 /* 
 //download
