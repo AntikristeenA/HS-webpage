@@ -85,20 +85,23 @@ res.end()
 	
 })
 
-res.redirect('/index.html');
 
-/* 
 
+
+
+app.get('/', (req, res) => {
+  res.redirect('index.html');
+});
+
+//redirect('index.html');
+
+
+/*
 const port = 8080;
 
 app.listen(port, () => {
   console.log(`Server running on port${port}`);
 });
-
-
-
-
-
 
 
 const { body,validationResult } = require('express-validator/check');
