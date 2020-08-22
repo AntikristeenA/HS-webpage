@@ -86,17 +86,20 @@ res.end()
 })
 
 
-/* 
+
 const port = process.env.PORT || '8080';
-app.listen(port, () => console.log(`Server started on Port ${port}`)); */
+app.listen(port, () => console.log(`Server started on Port ${port}`)); 
 
 
+app.get('/', (req, res) => {
+   res.send('index.html');
+});
 
 
 var http = require('http');
 var fs = require('fs');
 
-
+/* 
 http.createServer(function (req, res) {
   //Open a file on the server and return its content:
   fs.readFile('index.html', function(err, data) {
@@ -105,7 +108,7 @@ http.createServer(function (req, res) {
     return res.end();
   });
 }).listen(8080);
-
+ */
 
 
 
