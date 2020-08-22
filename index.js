@@ -86,9 +86,9 @@ res.end()
 })
 
 
-app.get('/', (req, res) => {
-   res.render('index.html');
-});
+app.get('/', function (req, res) { res.render('index', { title : 'Home' } ) });
+
+
 
 
 const port = process.env.PORT || '5000';
@@ -99,6 +99,10 @@ app.listen(port, () => console.log(`Server started on Port ${port}`));
 /*
 
 
+
+app.get('/', (req, res) => {
+   res.render('index.html');
+});
 
 
 
