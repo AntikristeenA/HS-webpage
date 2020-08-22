@@ -42,9 +42,14 @@ transporter.sendMail(mailOptions, function(error, info){
   }
   
 });	
-	return res.redirect('/index.html');
+//routing contact sent
+     fs.readFile('submitc.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
 
-res.end()
+});
+
 	
 })
 
@@ -84,15 +89,13 @@ transporter.sendMail(mailOptions, function(error, info){
 
 
 //routing request sent
-//app.get('/request', function (req, res) {
      fs.readFile('submitr.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
-//});
+
 });
-	//return res.redirect('/submitr.html');
-//res.end()
+
 	
 })
 
