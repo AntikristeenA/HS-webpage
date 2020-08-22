@@ -86,22 +86,18 @@ res.end()
 })
 
 
-app.get('/', (req, res) => {
-   res.render('index.html');
+app.get('/', function(req, res) => {
+   res.render('index');
 });
 
 
 const port = process.env.PORT || '5000';
 app.listen(port, () => console.log(`Server started on Port ${port}`));
-//redirect('index.html');
+
 
 
 /*
 
-
-app.get('/', (req, res) => {
-   res.redirect('index.html');
-});
 
 
 
