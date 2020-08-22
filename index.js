@@ -1,7 +1,7 @@
 
 var http = require('http');
 var fs = require('fs');
-
+//var formidable = require('formidable');
 
 var nodemailer = require('nodemailer');
 
@@ -9,6 +9,27 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 app.use(express.urlencoded({extended: true}))
+
+
+/* 
+//download
+var download = function(url, dest, cb) {
+  var file = fs.createWriteStream(dest);
+  http.get(url, function(response) {
+    response.pipe(file);
+    file.on('finish', function() {
+      file.close(cb);
+    });
+  });
+}
+app.get(fname, function (req, res) {
+    var file = 'https://antikristeena.github.io/HS-webpage/Sounds/'+fname
+	var dest ='Downloads'
+    return download(file, dest);
+});
+
+
+ */
 
 //Contact mail
 app.post('/submit', (req, res) =>{
