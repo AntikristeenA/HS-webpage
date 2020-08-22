@@ -86,13 +86,26 @@ res.end()
 })
 
 
-app.get('/', function (req, res) { res.render('index', { title : 'Home' } ) });
 
-
-
-
-const port = process.env.PORT || '5000';
+const port = process.env.PORT || '8080';
 app.listen(port, () => console.log(`Server started on Port ${port}`));
+
+
+
+
+var http = require('http');
+var fs = require('fs');
+http.createServer(function (req, res) {
+  //Open a file on the server and return its content:
+  fs.readFile('index.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+}).listen(8080);
+
+
+
 
 
 
