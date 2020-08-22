@@ -21,14 +21,14 @@ function searchF()
 		
 		var player = document.createElement('audio');
 		//player.id = "player";
-		player.src = 'Sounds/'+soundsList[i].name+'.mp3';
+		player.src = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
 		var div = document.getElementById("playerEraser");
 		div.appendChild(player);
 		//download
 		var dl = document.createElement('a');
-		dl.href = 'Sounds/'+soundsList[i].name+'.mp3';
+		dl.href = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
 		dl.download ='';
 		div.appendChild(dl);
 		//button
