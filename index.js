@@ -1,4 +1,6 @@
 
+var http = require('http');
+var fs = require('fs');
 
 
 var nodemailer = require('nodemailer');
@@ -99,8 +101,6 @@ app.get('/', (req, res) => {
 });
 
 });
-var http = require('http');
-var fs = require('fs');
 
 /* 
 http.createServer(function (req, res) {
