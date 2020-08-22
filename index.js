@@ -88,15 +88,23 @@ res.end()
 
 
 
-
 app.get('/', (req, res) => {
-  res.redirect('index.html');
+   res.end('index.html');
 });
+
 
 //redirect('index.html');
 
 
 /*
+
+
+app.get('/', (req, res) => {
+   res.redirect('index.html');
+});
+
+
+
 const port = 8080;
 
 app.listen(port, () => {
