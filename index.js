@@ -87,7 +87,7 @@ res.end()
 
 
 app.get('/', (req, res) => {
-   res.redirect('index.html');
+   res.render('index.html');
 });
 
 
