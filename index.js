@@ -88,18 +88,38 @@ res.end()
 })
 
 
-
+//server
 const port = process.env.PORT || '8080';
 app.listen(port, () => console.log(`Server started on Port ${port}`)); 
 
-
+//routing Landing page
 app.get('/', (req, res) => {
    fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
 });
+});
 
+
+
+//routing contact
+app.get('/contact', function (req, res) {
+     fs.readFile('Contact.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+});
+});
+
+
+//routing request
+app.get('/request', function (req, res) {
+     fs.readFile('form.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+});
 });
 
 /* 
