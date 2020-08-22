@@ -85,11 +85,15 @@ res.end()
 	
 })
 
+
 app.get('/', (req, res) => {
    res.send('index.html');
 });
 
 
+
+const port = process.env.PORT || '5000';
+app.listen(port, () => console.log(`Server started on Port ${port}`));
 //redirect('index.html');
 
 
@@ -102,11 +106,14 @@ app.get('/', (req, res) => {
 
 
 
+
 const port = 8080;
 
 app.listen(port, () => {
   console.log(`Server running on port${port}`);
 });
+
+
 
 
 const { body,validationResult } = require('express-validator/check');
