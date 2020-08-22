@@ -29,13 +29,14 @@ function searchF()
 		var div = document.getElementById("playerEraser");
 		div.appendChild(player);
 		//download
-		var dl = document.createElement('a');
+		/* var dl = document.createElement('a');
 		dl.href = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
 		dl.download ='';
-		div.appendChild(dl);
+		div.appendChild(dl); */
 		//button
 		var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
+		btn.onclick = "document.location='?name='+soundsList[i].name"
 		btn.appendChild(btnTxt);
 		dl.appendChild(btn);
 		

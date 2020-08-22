@@ -4,11 +4,30 @@ var fs = require('fs');
 //var formidable = require('formidable');
 
 var nodemailer = require('nodemailer');
-
+var url = require('url');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
 app.use(express.urlencoded({extended: true}))
+var queryF;
+
+//download
+
+
+
+
+app.get(queryF, function(req, res){
+	
+var adr = queryF;
+var q = url.parse(adr, true);
+
+
+var qdata = q.query; 
+
+  res.download('https://antikristeena.github.io/HS-webpage/Sounds/'+qdata.name+'.mp3'); // Set disposition and send it.
+});
+
+
 
 
 /* 
