@@ -87,9 +87,8 @@ res.end()
 
 
 app.get('/', (req, res) => {
-   res.send('index.html');
+   res.redirect('index.html');
 });
-
 
 
 const port = process.env.PORT || '5000';
