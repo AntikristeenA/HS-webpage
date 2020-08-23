@@ -24,6 +24,7 @@ function searchF()
 		player.src = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
+		player.preload='auto';
 		
 		player.controls = 'download';
 		var div = document.getElementById("playerEraser");
