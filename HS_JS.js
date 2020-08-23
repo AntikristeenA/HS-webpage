@@ -24,14 +24,14 @@ function searchF()
 		player.src = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
-		player.preload='auto';
+		//player.preload='auto';
 		
 		player.controls = 'download';
 		var div = document.getElementById("playerEraser");
 		div.appendChild(player);
 		//download
 		var dl = document.createElement('a');
-		dl.href = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.jj';
+		dl.href = 'https://antikristeena.github.io/HS-webpage/Download/'+soundsList[i].name+'.jj';
 		dl.download =soundsList[i].name+'.mp3';
 		div.appendChild(dl);  
 /* 		
