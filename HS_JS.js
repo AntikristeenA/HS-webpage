@@ -32,8 +32,8 @@ function searchF()
 		var dl = document.createElement('a');
 		dl.href = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.jj';
 		dl.download =soundsList[i].name+'.mp3';
-		div.appendChild(dl); 
-		
+		div.appendChild(dl);  
+/* 		
 		var dl = document.createElement('form');
 		dl.action ='/download';
 		dl.target ='_blank';
@@ -53,7 +53,11 @@ function searchF()
 		var btn = document.createElement('input');
 		btn.type ="submit";
 		var btnTxt = document.createTextNode("Download");
-	
+	 */
+	 
+	 var btn = document.createElement('button');
+		var btnTxt = document.createTextNode("Download");
+	 
 		btn.appendChild(btnTxt);
 		dl.appendChild(btn);
 		
