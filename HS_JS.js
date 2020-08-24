@@ -72,6 +72,8 @@ function searchF()
 		btn.appendChild(btnTxt);
 		//dl.appendChild(btn);
 		div.appendChild(btn);
+		
+		
 /* 		
 		//hidden input
 		var nameDld = document.createElement('input');
