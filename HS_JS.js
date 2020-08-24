@@ -86,11 +86,8 @@ function searchF()
 		var nl = document.createElement('br');
 		div.appendChild(nl);
 		}
-	}	
-}
+	}
 
-
-//nothing
 $('#btndwl').on('click', function () {
 	var filename = $('#btndwl').attr('name');
     $.ajax({
@@ -111,3 +108,6 @@ $('#btndwl').on('click', function () {
         }
     })
 });
+	
+}
+
