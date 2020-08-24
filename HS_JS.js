@@ -31,7 +31,7 @@ function searchF()
 		div.appendChild(player);
 		//download
 		var dl = document.createElement('a');
-		dl.href = 'https://antikristeena.github.io/HS-webpage/Download/'+soundsList[i].name+'.jj';
+		dl.href = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+soundsList[i].name+'.mp3';
 		dl.download =soundsList[i].name+'.mp3';
 		div.appendChild(dl);  
 /* 		
