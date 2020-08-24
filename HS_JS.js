@@ -88,26 +88,6 @@ function searchF()
 		}
 	}	
 }
-//DL function
-function DL(dfile){
-	$.ajax({
-        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+dfile+'.howsounds',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = dfile+'.mp3';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    });
-}
 
 
 //nothing
@@ -129,5 +109,5 @@ $('#btndwl').on('click', function () {
             a.remove();
             window.URL.revokeObjectURL(url);
         }
-    });
+    })
 });
