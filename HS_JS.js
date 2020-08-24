@@ -67,7 +67,7 @@ function searchF()
 	 var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
 		btn.id ='btndwl';
-		btn.class=soundsList[i].name;
+		btn.name=soundsList[i].name;
 		btn.onclick="DL('soundsList[i].name')";
 		btn.appendChild(btnTxt);
 		//dl.appendChild(btn);
@@ -112,7 +112,7 @@ function DL(dfile){
 
 //nothing
 $('#btndwl').on('click', function () {
-	var filename = $('#btndwl').attr('class');
+	var filename = $('#btndwl').attr('name');
     $.ajax({
         url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
         method: 'GET',
