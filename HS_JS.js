@@ -110,8 +110,8 @@ function DL(dfile){
 }
 
 //nothing
-$('btndwl').on('click', function () {
-	var filename = $('btndwl').name;
+$('#btndwl').on('click', function () {
+	var filename = $('#btndwl').name;
     $.ajax({
         url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
         method: 'GET',
