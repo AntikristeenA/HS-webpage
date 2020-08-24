@@ -107,8 +107,8 @@ $('#btndwl').on('click', function () {
             window.URL.revokeObjectURL(url);
         }
     })
-});
-}
+})
+})
 	
 }
 
