@@ -100,7 +100,7 @@ function DL(dfile){
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = dfile+'.mp3;'
+            a.download = dfile+'.mp3';
             document.body.append(a);
             a.click();
             a.remove();
@@ -111,8 +111,9 @@ function DL(dfile){
 
 //nothing
 $('btndwl').on('click', function () {
+	var filename = $('btndwl').name;
     $.ajax({
-        url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/172905/test.pdf',
+        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
@@ -121,11 +122,11 @@ $('btndwl').on('click', function () {
             var a = document.createElement('a');
             var url = window.URL.createObjectURL(data);
             a.href = url;
-            a.download = 'myfile.pdf';
+            a.download = filename+'.mp3';
             document.body.append(a);
             a.click();
             a.remove();
             window.URL.revokeObjectURL(url);
         }
     });
-});v
+});
