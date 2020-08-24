@@ -1,8 +1,8 @@
 
 
 
-$('#btndwl').on('click', function () {
-	var filename = $('#btndwl').attr('name');
+$('button').on('click', function () {
+	var filename = $(this).attr('name');
     $.ajax({
         url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
         method: 'GET',
