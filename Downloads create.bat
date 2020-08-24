@@ -1,2 +1,2 @@
 cd c:\hs\download
-ren *.mp3 *.jj
+ren *.mp3 *.howsounds

@@ -21,7 +21,7 @@ function searchF()
 		
 		var player = document.createElement('audio');
 		//player.id = "player";
-		player.src = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
+		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
 		//player.preload='auto';
@@ -31,7 +31,7 @@ function searchF()
 		div.appendChild(player);
 		//download
 		var dl = document.createElement('a');
-		dl.href = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+soundsList[i].name+'.mp3';
+		dl.href = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+soundsList[i].name+'.howsounds';
 		dl.download =soundsList[i].name+'.mp3';
 		div.appendChild(dl);  
 /* 		
