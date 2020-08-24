@@ -70,8 +70,8 @@ function searchF()
 		btn.name='soundsList[i].name';
 		btn.onclick="DL('soundsList[i].name')";
 		btn.appendChild(btnTxt);
-		dl.appendChild(btn);
-		
+		//dl.appendChild(btn);
+		div.appendChild(btn);
 		
 		//hidden input
 		var nameDld = document.createElement('input');
