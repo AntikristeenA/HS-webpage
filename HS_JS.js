@@ -87,7 +87,16 @@ function searchF()
 		div.appendChild(nl);
 		}
 	}
-
+	
+	//loading script for downloading
+	var dscript = document.createElement('script');
+		
+		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
+		//dl.appendChild(btn);
+		div.appendChild(dscript);
+	
+	
+/* 
 $('#btndwl').on('click', function () {
 	var filename = $('#btndwl').attr('name');
     $.ajax({
@@ -107,7 +116,7 @@ $('#btndwl').on('click', function () {
             window.URL.revokeObjectURL(url);
         }
     })
-})
+}) */
 
 	
 }
