@@ -67,19 +67,19 @@ function searchF()
 	 var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
 		btn.id ='btndwl';
-		btn.name='soundsList[i].name';
+		btn.name=soundsList[i].name;
 		btn.onclick="DL('soundsList[i].name')";
 		btn.appendChild(btnTxt);
 		//dl.appendChild(btn);
 		div.appendChild(btn);
-		
+/* 		
 		//hidden input
 		var nameDld = document.createElement('input');
 		nameDld.value =soundsList[i].name ;
 		nameDld.type="hidden";
 		nameDld.name = 'nameDld';
 		dl.appendChild(nameDld);
-		
+		 */
 		//new line
 		var nl = document.createElement('br');
 		div.appendChild(nl);
