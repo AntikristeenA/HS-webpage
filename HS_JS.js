@@ -26,16 +26,22 @@ function searchF()
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
 		//player.preload='auto';
-		
 		player.controls = 'download';
 		var div = document.getElementById("playerEraser");
 		div.appendChild(player);
+		
+		
+		
+		
+		
+		
+/* 		
 		//download
 		var dl = document.createElement('a');
 		dl.href = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+soundsList[i].name+'.howsounds';
 		dl.crossorigin="anonymous";
 		dl.download =soundsList[i].name+'.mp3';
-		div.appendChild(dl);  
+		div.appendChild(dl);  */ 
 /* 		
 		var dl = document.createElement('form');
 		dl.action ='/download';
@@ -60,7 +66,9 @@ function searchF()
 	 
 	 var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
-	 
+		btn.id ='btndwl';
+		btn.name='soundsList[i].name';
+		btn.onclick="DL('soundsList[i].name')";
 		btn.appendChild(btnTxt);
 		dl.appendChild(btn);
 		
@@ -78,5 +86,44 @@ function searchF()
 		}
 	}	
 }
+//DL function
+function DL(dfile){
+	$.ajax({
+        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+dfile+'.howsounds',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = dfile+'.mp3;'
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
+}
 
-
+//nothing
+$('btndwl').on('click', function () {
+    $.ajax({
+        url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/172905/test.pdf',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'myfile.pdf';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
+});v
