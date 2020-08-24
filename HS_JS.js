@@ -22,6 +22,7 @@ function searchF()
 		var player = document.createElement('audio');
 		//player.id = "player";
 		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
+		player.crossorigin="anonymous";
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
 		//player.preload='auto';
@@ -32,6 +33,7 @@ function searchF()
 		//download
 		var dl = document.createElement('a');
 		dl.href = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+soundsList[i].name+'.howsounds';
+		dl.crossorigin="anonymous";
 		dl.download =soundsList[i].name+'.mp3';
 		div.appendChild(dl);  
 /* 		
