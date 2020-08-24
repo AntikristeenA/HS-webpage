@@ -87,7 +87,7 @@ function searchF()
 		div.appendChild(nl);
 		}
 	}
-
+$(window).on('load', function() {
 $('#btndwl').on('click', function () {
 	var filename = $('#btndwl').attr('name');
     $.ajax({
@@ -108,6 +108,7 @@ $('#btndwl').on('click', function () {
         }
     })
 });
+}
 	
 }
 
