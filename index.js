@@ -191,7 +191,7 @@ app.get('/about', function (req, res) {
 });
 
 
-//SSL certificate
+/* //SSL certificate
 const hostname = 'howsounds.me';
 const httpsPort = 443;
 
@@ -202,9 +202,9 @@ const httpsOptions = {
 const httpsServer = https.createServer(httpsOptions, app);
 
 httpsServer.listen(httpsPort, hostname);
+ */
 
 
-
-/* //server
+//server
 const port = process.env.PORT || '8080';
-app.listen(port, () => console.log(`Server started on Port ${port}`));  */
+app.listen(port, () => console.log(`Server started on Port ${port}`));  
