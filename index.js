@@ -147,6 +147,15 @@ app.get('/', (req, res) => {
 });
 
 
+//routing Landing page
+app.get('/index', (req, res) => {
+   fs.readFile('index.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+});
+});
+
 
 //routing contact
 app.get('/contact', function (req, res) {
