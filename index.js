@@ -1,5 +1,6 @@
 
 var http = require('http');
+const https = require("https");
 var fs = require('fs');
 //var formidable = require('formidable');
 
@@ -8,6 +9,11 @@ var url = require('url');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser')
+
+
+
+
+
 app.use(express.urlencoded({extended: true}))
 
 
@@ -133,9 +139,7 @@ transporter.sendMail(mailOptions, function(error, info){
 })
 
 
-//server
-const port = process.env.PORT || '8080';
-app.listen(port, () => console.log(`Server started on Port ${port}`)); 
+
 
 //routing Landing page
 app.get('/', (req, res) => {
@@ -156,6 +160,7 @@ app.get('/contact', function (req, res) {
     return res.end();
 });
 });
+
 
 
 //routing request
@@ -186,6 +191,20 @@ app.get('/about', function (req, res) {
 });
 
 
+//SSL certificate
+const hostname = 'howsounds.me';
+const httpsPort = 443;
+
+const httpsOptions = {
+	cert: fs.readFileSync('CS/server.crt'),
+	key: fs.readFileSync('CS/server.key')
+};
+const httpsServer = https.createServer(httpsOptions, app);
+
+httpsServer.listen(httpsPort, hostname);
 
 
 
+/* //server
+const port = process.env.PORT || '8080';
+app.listen(port, () => console.log(`Server started on Port ${port}`));  */
