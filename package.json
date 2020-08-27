@@ -4,6 +4,7 @@
   "description": "Howsounds official webpage",
   "main": "index.js",
   "dependencies": {
+    "aws-sdk": "^2.740.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
@@ -13,7 +14,8 @@
     "https": "^1.0.0",
     "node": "^14.8.0",
     "nodemailer": "^6.4.11",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {},
   "scripts": {
