@@ -65,9 +65,8 @@ function searchF()
 	
 }
 
-function keyF()
-{
-var input = document.getElementById("Sbutton");
+
+var input = document.getElementById("search");
 
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
@@ -79,4 +78,4 @@ input.addEventListener("keyup", function(event) {
     searchF();
   }
 });
-}
+
