@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://antikristeena.github.io/HS-webpage/HS_JS.js"></script>
 	<title>HowSounds</title>
 	<script src="https://antikristeena.github.io/HS-webpage/SoundList.js"></script>
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
 
 
@@ -17,34 +18,100 @@
 
 <body>
 	
-	
-	
+	<div class="container">
+		<div id="pictureD" class="container-fluid">
+		Picture goes here
+		</div>
+		
+		<div id='controlsD'class="container">
+		
 		<label>Search for tag:</label><br>
-		<input id="search" type="text">
-		<button id="Sbutton" onclick="searchF()" >Search</button>
 		
+			<div class='row'>
+			
+				<div class='col-sm-4'>
+				</div>
+				
+				<div class='col-lg-4'>
+					<input id="search" type="text" class="form-control form-control"  onkeydown='keyF()'>
+					<button id="Sbutton" onclick="searchF()" class='btn btn-lg' >Search</button>
+				</div>
+				
+				<div class='col-lg-4'>	
+					<div class="d-flex flex-row-reverse">
+						
+						
+						<button id="about" class='btn' onclick="document.location='about'"  >About</button>
+						<button id="contact" class='btn' onclick="document.location='contact'" >Contact</button>
+						<button id="Requestbutton" class='btn' onclick="document.location='request'" >Request sound</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		
-		<button id="Requestbutton" onclick="document.location='request'" >Request sound</button>
-		<button id="contact" onclick="document.location='contact'" >Contact</button>
-		<button id="about" onclick="document.location='about'" >About</button>
+		<div class="container">
 		
+			<div class='container pt-4'>
+				
+
+				<div id="players">
+					<div id ="playerEraser">
+				
+					
+						 
+					</div>
+				</div>
+			</div>
+			<!-- <object data="Sounds.html" width="500xp"> 
+			</object> -->
+			<div class='container-floating pt-5'>
+			<h2>Chose category:</h2>
+			</div>
+			
+			<div id='bodyD' class="row pt-4" >
+				<div id='leftD' class="col-sm-6 ">
+					
+					
+						<button type="button" class="btn btn-secondary btn-block " data-toggle="collapse" data-target="#demo1">category</button>
+						<div id="demo1" class="collapse bg-secondary">
+						players
+						</div>
+						<br>
+						
+						<button type="button" class="btn btn-secondary btn-block " data-toggle="collapse" data-target="#demo3">category</button>
+						<div id="demo3" class="collapse bg-secondary">
+						players
+						</div>
+						<br>
+						
+				</div>
+				
+				<div id='rightD' class="col-sm-6 ">
+					
+						<button type="button" class="btn btn-secondary btn-block " data-toggle="collapse" data-target="#demo2">category</button>
+						<div id="demo2" class="collapse bg-secondary"> 
+						players
+						</div>
+						<br>
+						
+						<button type="button" class="btn btn-secondary btn-block " data-toggle="collapse" data-target="#demo4">category</button>
+						<div id="demo4" class="collapse bg-secondary">
+						players
+						</div>
+						<br>
+						
+				</div>
+				
+			
+			
+			</div>
+			
+		</div>
 		
-<!-- 		
-		<button id="Requestbutton" onclick="document.location='request'" >Request sound</button>
-		<button id="contact" onclick="document.location='contact'" >Contact</button>
-		<button id="about" onclick="document.location='about'" >About</button>
-	 -->
-	<div id="players">
-		<div id ="playerEraser">
-	
-		
-		 	 
+		<div id='bottomD' class="container pt-5">
+		bottom
 		</div>
 	</div>
-	
-	<!-- <object data="Sounds.html" width="500xp"> 
-	</object> -->
-
 </body>
 </html>
 

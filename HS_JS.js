@@ -30,39 +30,6 @@ function searchF()
 		var div = document.getElementById("playerEraser");
 		div.appendChild(player);
 		
-		
-		
-		
-		
-		
-/* 		
-		//download
-		var dl = document.createElement('a');
-		dl.href = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+soundsList[i].name+'.howsounds';
-		dl.crossorigin="anonymous";
-		dl.download =soundsList[i].name+'.mp3';
-		div.appendChild(dl);  */ 
-/* 		
-		var dl = document.createElement('form');
-		dl.action ='/download';
-		dl.target ='_blank';
-		dl.method = 'get';
-		div.appendChild(dl);
-		
-		
-		//dl.href = 'https://antikristeena.github.io/HS-webpage/Sounds/'+soundsList[i].name+'.mp3';
-		//dl.download ='';
-		
-		//button
-		var nameFile = document.createElement('label');
-		var nameFileTxt = document.createTextNode(soundsList[i].name);
-		nameFile.appendChild(nameFileTxt);
-		dl.appendChild(nameFile);
-		
-		var btn = document.createElement('input');
-		btn.type ="submit";
-		var btnTxt = document.createTextNode("Download");
-	 */
 	 
 	 var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
@@ -95,29 +62,20 @@ function searchF()
 		//dl.appendChild(btn);
 		div.appendChild(dscript);
 	
-	
-/* 
-$('#btndwl').on('click', function () {
-	var filename = $('#btndwl').attr('name');
-    $.ajax({
-        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
-        method: 'GET',
-        xhrFields: {
-            responseType: 'blob'
-        },
-        success: function (data) {
-            var a = document.createElement('a');
-            var url = window.URL.createObjectURL(data);
-            a.href = url;
-            a.download = filename+'.mp3';
-            document.body.append(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-        }
-    })
-}) */
-
-	
 }
-//ytertyuiuyt
+
+function keyF()
+{
+var input = document.getElementById("Sbutton");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    function searchF();
+  }
+});
+}
