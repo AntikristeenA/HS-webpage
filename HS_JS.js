@@ -34,11 +34,16 @@ function searchF()
 	 var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
 		btn.id ='btndwl';
+		
 		btn.name=soundsList[i].name;
 		btn.onclick="DL('soundsList[i].name')";
+		
 		btn.appendChild(btnTxt);
+		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
 		//dl.appendChild(btn);
 		div.appendChild(btn);
+		
+		
 		
 		
 		
