@@ -42,7 +42,6 @@ function searchF()
 		
 		
 		
-		
 /* 		
 		//hidden input
 		var nameDld = document.createElement('input');
@@ -79,6 +78,5 @@ input.addEventListener("keyup", function(event) {
     // Trigger the button element with a click
     searchF()
   }
-  
 });
 }
