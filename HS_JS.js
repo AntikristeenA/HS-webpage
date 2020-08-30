@@ -79,5 +79,6 @@ input.addEventListener("keyup", function(event) {
     // Trigger the button element with a click
     searchF()
   }
+  
 });
 }
