@@ -66,6 +66,8 @@ function searchF()
 	
 }
 
+
+
 function keyF()
 {
 var input = document.getElementById("search");
