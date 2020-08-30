@@ -42,6 +42,7 @@ function searchF()
 		
 		
 		
+		
 /* 		
 		//hidden input
 		var nameDld = document.createElement('input');
@@ -65,7 +66,8 @@ function searchF()
 	
 }
 
-
+function keyF()
+{
 var input = document.getElementById("search");
 
 // Execute a function when the user releases a key on the keyboard
@@ -75,7 +77,8 @@ input.addEventListener("keyup", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    searchF();
+    searchF()
   }
+  
 });
-
+}
