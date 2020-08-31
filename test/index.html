@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="HS_JS.js"></script>
+	<title>HowSounds</title>
+	<script src="https://antikristeena.github.io/HS-webpage/SoundList.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+
+
+
+</head>
+
+<body onload='copyrightF()'>
+	
+	<div class="container">
+		<div id="pictureD" class="container-fluid">
+		Picture goes here
+		</div>
+		
+		
+			<div id='controlsD'class="container">
+			
+			
+				<div class='row bg-secondary pb-3'>
+				
+					<div class='col-sm-4'>
+			
+					</div>
+					
+					<div class='col-lg-4'>
+						<button id="Sbutton" onclick="searchF()" class='btn btn-lg btn-secondary' >Search for tag:</button>
+						<input id="search" type="text" class="form-control form-control-lg"  onkeydown='keyF()'>
+						
+					</div>
+					
+					<div class='col-lg-4'>	
+						<div class="d-flex flex-row-reverse">
+							
+							
+							<button id="about" class='btn btn-secondary' onclick="document.location='about' "  >About</button>
+							<button id="contact" class='btn btn-secondary' onclick="document.location='contact'" >Contact</button>
+							<button id="Requestbutton" class='btn btn-secondary' onclick="document.location='request'" >Request sound</button>
+						</div>
+					</div>
+				</div> 
+			</div> 
+			
+	
+						 
+		<!-- players -->
+		<div class="container">
+		
+			<div class='container pt-4'>
+				<div class='row'>
+					<div class='col-sm-3'>
+					</div>
+					<div class='col-lg-6 '>
+					
+
+						<div id="players" class=' bg-secondary '  style="color:White;" >
+							<div id ="playerEraser">
+						
+							
+								 
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-3'>
+					</div> 
+				</div>
+			</div>
+			<!-- <object data="Sounds.html" width="500xp"> 
+			</object> -->
+			<div class='container-floating pt-5'>
+			<h2>Chose category:</h2>
+			</div>
+			<hr>
+			
+			
+			<!-- categories -->
+			<div id='bodyD' class="row pt-4" style="color:White;" >
+			
+			
+				
+				<div id='leftD' class="col-xl-5 ">
+					
+					<!-- change every id and onclick argument and text -->
+						<button id='animal' onclick='category("animal")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo1">Animal</button>
+							<div id="demo1" class="collapse bg-secondary">
+							
+								<div id="animalDiv">
+									<div id ="animalE">
+								
+									
+										 
+									</div>
+								</div>
+								
+						
+							</div>
+						<br>
+						
+						<button id='house' onclick='category("house")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo3">House</button>
+						<div id="demo3" class="collapse bg-secondary">
+						
+							<div id="houseDiv">
+								<div id ="houseE">
+								
+									
+										 
+								</div>
+							</div>
+								
+						
+						</div>
+						<br>
+						
+				
+			</div>
+				<div class='col-sm-2'>
+				</div>
+				
+				<div id='rightD' class="col-xl-5 ">
+					
+						<button type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo2">category</button>
+						<div id="demo2" class="collapse bg-secondary"> 
+						
+						<audio controls> </audio>
+						
+						</div>
+						<br>
+						
+						<button type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo4">category</button>
+						<div id="demo4" class="collapse bg-secondary">
+						
+						<audio controls> </audio>
+						
+						</div>
+						<br>
+						
+				</div>
+		
+			
+			</div>
+			
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id='bottomD' class="container pt-5 pb-3 mt-5 bg-secondary">
+			  <div class="d-flex justify-content-center bg-secondary mb-3">
+				<div  id='copyright'class="p-2 " style="color:White;"></div>
+				
+			  </div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

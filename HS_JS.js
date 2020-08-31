@@ -27,8 +27,16 @@ function searchF()
 		var div = document.getElementById("playerEraser");
 		div.appendChild(playerFlex);
 		
+		
+		//name of the record
+		playerFlex.innerHTML = '- '+soundsList[i].name;	
+		
+		//new line
+		var nl = document.createElement('br');
+		playerFlex.appendChild(nl);
+		
 		//if we need to add class
-		playerFlex.classList.add('');
+		//playerFlex.classList.add('');
 		
 		//adding d-flex field button
 		var playerFlexB = document.createElement('div');
@@ -37,7 +45,7 @@ function searchF()
 		divB.appendChild(playerFlexB);
 		
 		//if we need to add class
-		playerFlexB.classList.add('');
+		//playerFlexB.classList.add('');
 			
 		
 		
@@ -51,6 +59,7 @@ function searchF()
 		player.controls = 'download';
 		var div = document.getElementById("playerFlex");
 		div.appendChild(player);
+		
 		
 	 
 	 var btn = document.createElement('button');
@@ -73,6 +82,8 @@ function searchF()
 		btn.classList.add('pb-3');
 		btn.classList.add('pt-3');
 		//btn.classList.add('mb-5');
+		btn.classList.add('mt-3');
+
 
 		//new line
 		var nl = document.createElement('br');
@@ -109,6 +120,35 @@ function category(cat)
 		if (soundsList[i].tag.includes(cat))
 		{
 		
+		
+		//adding d-flex field audio
+		var playerFlex = document.createElement('div');
+		playerFlex.id =  "playerFlex";
+		var div = document.getElementById(cat+"E");
+		div.appendChild(playerFlex);
+		
+		div.classList.add('d-flex');
+		
+		//name of the record
+		playerFlex.innerHTML = '- '+soundsList[i].name;	
+		
+		//new line
+		var nl = document.createElement('br');
+		playerFlex.appendChild(nl);
+		
+		//if we need to add class
+		//playerFlex.classList.add('');
+		
+		//adding d-flex field button
+		var playerFlexB = document.createElement('div');
+		playerFlexB.id =  "playerFlexB";
+		var divB = document.getElementById(cat+"E");
+		divB.appendChild(playerFlexB);
+		
+		//if we need to add class
+		//playerFlexB.classList.add('');
+		
+		
 		var player = document.createElement('audio');
 		//player.id = "player";
 		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
@@ -118,7 +158,7 @@ function category(cat)
 		//player.preload='auto';
 		player.controls = 'download';
 		var div = document.getElementById(cat+"E");
-		div.appendChild(player);
+		playerFlex.appendChild(player);
 		
 	 
 	 var btn = document.createElement('button');
@@ -131,7 +171,7 @@ function category(cat)
 		btn.appendChild(btnTxt);
 		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
 		//dl.appendChild(btn);
-		div.appendChild(btn);
+		playerFlexB	.appendChild(btn);
 		
 		//download button style
 		//class download is important for downloading function
@@ -142,7 +182,8 @@ function category(cat)
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
 		btn.classList.add('pt-3');
-		btn.classList.add('mb-5');
+		//btn.classList.add('mb-2');
+		btn.classList.add('mt-3');
 
 		//new line
 		var nl = document.createElement('br');
