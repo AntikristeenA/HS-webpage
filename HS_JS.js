@@ -79,13 +79,12 @@ function category(cat)
 	catE.id =  cat+"E";
 	var div = document.getElementById(cat+"Div");
 	div.appendChild(catE);
-	//searching 
-	var tag = document.getElementById(cat).value;
+
 	//soundsList.forEach(CreatePlayer(tag));	
 	
 		var i;
 		for (i = 0; i < soundsList.length; i++) {
-		if (soundsList[i].tag.includes(tag))
+		if (soundsList[i].tag.includes(cat))
 		{
 		
 		var player = document.createElement('audio');
