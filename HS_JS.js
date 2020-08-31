@@ -42,20 +42,7 @@ function searchF()
 		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
 		//dl.appendChild(btn);
 		div.appendChild(btn);
-		
-		
-		
-		
-		
-		
-/* 		
-		//hidden input
-		var nameDld = document.createElement('input');
-		nameDld.value =soundsList[i].name ;
-		nameDld.type="hidden";
-		nameDld.name = 'nameDld';
-		dl.appendChild(nameDld);
-		 */
+
 		//new line
 		var nl = document.createElement('br');
 		div.appendChild(nl);
@@ -72,7 +59,66 @@ function searchF()
 }
 
 
+//function for categorie sorting
+function category(cat)
+{
+	//erase players	
+	var remplayersC = document.getElementById(cat+"E");
+	remplayersC.remove();
+	//create div as a cointainer for players
+	var catE = document.createElement('div');
+	catE.id =  cat+"E";
+	var div = document.getElementById(cat+"Div");
+	div.appendChild(catE);
+	//searching 
+	var tag = document.getElementById(cat).value;
+	//soundsList.forEach(CreatePlayer(tag));	
+	
+		var i;
+		for (i = 0; i < soundsList.length; i++) {
+		if (soundsList[i].tag.includes(tag))
+		{
+		
+		var player = document.createElement('audio');
+		//player.id = "player";
+		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
+		player.crossorigin="anonymous";
+		player.type = "audio/mpeg";
+		player.controls = 'controls';
+		//player.preload='auto';
+		player.controls = 'download';
+		var div = document.getElementById(cat+"E");
+		div.appendChild(player);
+		
+	 
+	 var btn = document.createElement('button');
+		var btnTxt = document.createTextNode("Download");
+		btn.id ='btndwl';
+		
+		btn.name=soundsList[i].name;
+		btn.onclick="DL('soundsList[i].name')";
+		
+		btn.appendChild(btnTxt);
+		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
+		//dl.appendChild(btn);
+		div.appendChild(btn);
 
+		//new line
+		var nl = document.createElement('br');
+		div.appendChild(nl);
+		}
+	}
+	
+	//loading script for downloading
+	var dscript = document.createElement('script');
+		
+		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
+		//dl.appendChild(btn);
+		div.appendChild(dscript);
+}
+
+
+//function for enter in search
 function keyF()
 {
 var input = document.getElementById("search");
