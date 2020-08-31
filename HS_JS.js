@@ -72,7 +72,7 @@ function searchF()
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
 		btn.classList.add('pt-3');
-		btn.classList.add('mb-5');
+		//btn.classList.add('mb-5');
 
 		//new line
 		var nl = document.createElement('br');
