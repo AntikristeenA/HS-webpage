@@ -44,6 +44,7 @@ function searchF()
 		div.appendChild(btn);
 		
 		//download button style
+		//class download is important for downloading function
 		btn.classList.add('download');
 		btn.classList.add('btn');
 		btn.classList.add('btn-secondary');
@@ -113,6 +114,7 @@ function category(cat)
 		div.appendChild(btn);
 		
 		//download button style
+		//class download is important for downloading function
 		btn.classList.add('download');
 		btn.classList.add('btn');
 		btn.classList.add('btn-secondary');
