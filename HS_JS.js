@@ -156,3 +156,12 @@ input.addEventListener("keyup", function(event) {
   
 });
 }
+
+
+
+
+function copyrightF() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("copyright").innerHTML = '©'+ n +' HowSounds, Inc.  All Rights Reserved.';
+}
