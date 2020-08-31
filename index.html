@@ -57,21 +57,18 @@
 		<div class="container">
 		
 			<div class='container pt-4'>
-				<div class='row'>
-					<div class='col-sm-3'>
+				<div class='row bg-secondary'>
+					<div class='col-sm-3 bg-secondary'>
 					</div>
-					<div class='col-lg-6 '>
-					
-
-						<div id="players" class=' bg-secondary pl-4'  style="color:White;" >
-							<div id ="playerEraser">
+					<div id='playerErasser' class='col-lg-6 ' style="color:White;">
+						<div id='ErraseMe'>
 						
-							
-								 
-							</div>
+
 						</div>
 					</div>
-					<div class='col-sm-3'>
+					
+					
+					<div class='col-sm-3 bg-secondary'>
 					</div> 
 				</div>
 			</div>
@@ -88,45 +85,39 @@
 			
 			
 				
-				<div id='leftD' class="col-xl-5 ">
+				<div id='leftD' class="col-xl-6 ">
 					
 					<!-- change every id and onclick argument and text -->
-						<button id='animal' onclick='category("animal")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo1">Animal</button>
-							<div id="demo1" class="collapse bg-secondary">
+						<button onclick='category("animal")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#animal">Animal</button>
 							
-								<div id="animalDiv">
-									<div id ="animalE">
-								
-									
-										 
-									</div>
-								</div>
-								
-						
-							</div>
-						<br>
-						
-						<button id='house' onclick='category("house")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo3">House</button>
-						<div id="demo3" class="collapse bg-secondary">
-						
-							<div id="houseDiv">
-								<div id ="houseE">
-								
-									
-										 
+							<div id='animal' class="collapse bg-secondary">
+								<div id='animalE'>
+							
 								</div>
 							</div>
-								
-						
-						</div>
+							
 						<br>
+						
+						<!-- change every id and onclick argument and text -->
+						<button onclick='category("house")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#house">House</button>
+							
+							<div id='house' class="collapse bg-secondary">
+								<div id='houseE'>
+							
+								</div>
+							</div>
+							
+						<br>
+						
+						
+						
 						
 				
 			</div>
-				<div class='col-sm-2'>
-				</div>
+				<!-- <div class='col-sm-2 '>
+				</div> -->
 				
-				<div id='rightD' class="col-xl-5 ">
+				<div id='rightD' class="col-xl-6 ">
 					
 						<button type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo2">category</button>
 						<div id="demo2" class="collapse bg-secondary"> 
