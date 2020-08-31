@@ -10,6 +10,8 @@ function searchF()
 	playerErase.id =  "playerEraser";
 	var div = document.getElementById("players");
 	div.appendChild(playerErase);
+	
+	playerErase.classList.add('d-flex'):
 	//searching 
 	var tag = document.getElementById("search").value;
 	//soundsList.forEach(CreatePlayer(tag));	
@@ -19,6 +21,26 @@ function searchF()
 		if (soundsList[i].tag.includes(tag))
 		{
 		
+		//adding d-flex field audio
+		var playerFlex = document.createElement('div');
+		playerFlex.id =  "playerFlex";
+		var div = document.getElementById("playerErase");
+		div.appendChild(playerFlex);
+		
+		//if we need to add class
+		playerFlex.classList.add(''):
+		
+		//adding d-flex field button
+		var playerFlexB = document.createElement('div');
+		playerFlexB.id =  "playerFlexB";
+		var divB = document.getElementById("playerErase");
+		divB.appendChild(playerFlexB);
+		
+		//if we need to add class
+		playerFlexB.classList.add(''):
+			
+		
+		
 		var player = document.createElement('audio');
 		//player.id = "player";
 		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
@@ -27,21 +49,19 @@ function searchF()
 		player.controls = 'controls';
 		//player.preload='auto';
 		player.controls = 'download';
-		var div = document.getElementById("playerEraser");
+		var div = document.getElementById("playerFlex");
 		div.appendChild(player);
 		
 	 
 	 var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
 		btn.id ='btndwl';
-		
 		btn.name=soundsList[i].name;
 		btn.onclick="DL('soundsList[i].name')";
-		
 		btn.appendChild(btnTxt);
-		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
-		//dl.appendChild(btn);
-		div.appendChild(btn);
+		
+		
+		playerFlexB.appendChild(btn);
 		
 		//download button style
 		//class download is important for downloading function
