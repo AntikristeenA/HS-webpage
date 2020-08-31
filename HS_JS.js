@@ -11,7 +11,7 @@ function searchF()
 	var div = document.getElementById("players");
 	div.appendChild(playerErase);
 	
-	playerErase.classList.add('d-flex'):
+	playerErase.classList.add('d-flex');
 	//searching 
 	var tag = document.getElementById("search").value;
 	//soundsList.forEach(CreatePlayer(tag));	
@@ -28,7 +28,7 @@ function searchF()
 		div.appendChild(playerFlex);
 		
 		//if we need to add class
-		playerFlex.classList.add(''):
+		playerFlex.classList.add('');
 		
 		//adding d-flex field button
 		var playerFlexB = document.createElement('div');
@@ -37,7 +37,7 @@ function searchF()
 		divB.appendChild(playerFlexB);
 		
 		//if we need to add class
-		playerFlexB.classList.add(''):
+		playerFlexB.classList.add('');
 			
 		
 		
