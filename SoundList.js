@@ -8,5 +8,10 @@ var soundsList = [
 		name:"cloth sound",
 		tag:["bed", "cracking"]
 
+	},
+	{
+		name:"roar",
+		tag:["animal", "roar"]
+
 	}
 ];
