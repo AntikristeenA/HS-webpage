@@ -13,5 +13,10 @@ var soundsList = [
 		name:"roar",
 		tag:["animal", "roar"]
 
+	},
+	{
+		name:"door knocking",
+		tag:["house", "knocking"]
+
 	}
 ];
