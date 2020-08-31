@@ -137,7 +137,7 @@ function category(cat)
 		playerFlex.appendChild(nl);
 		
 		//if we need to add class
-		//playerFlex.classList.add('');
+		playerFlex.classList.add('pl-2');
 		
 		//adding d-flex field button
 		var playerFlexB = document.createElement('div');
