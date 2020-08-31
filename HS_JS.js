@@ -24,7 +24,7 @@ function searchF()
 		//adding d-flex field audio
 		var playerFlex = document.createElement('div');
 		playerFlex.id =  "playerFlex";
-		var div = document.getElementById("playerErase");
+		var div = document.getElementById("playerEraser");
 		div.appendChild(playerFlex);
 		
 		//if we need to add class
@@ -33,7 +33,7 @@ function searchF()
 		//adding d-flex field button
 		var playerFlexB = document.createElement('div');
 		playerFlexB.id =  "playerFlexB";
-		var divB = document.getElementById("playerErase");
+		var divB = document.getElementById("playerEraser");
 		divB.appendChild(playerFlexB);
 		
 		//if we need to add class
