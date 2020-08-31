@@ -42,6 +42,9 @@ function searchF()
 		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
 		//dl.appendChild(btn);
 		div.appendChild(btn);
+		
+		btn.classList.add('download');
+
 
 		//new line
 		var nl = document.createElement('br');
