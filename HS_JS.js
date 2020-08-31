@@ -46,7 +46,7 @@ function searchF()
 		btn.classList.add('download');
 		btn.classList.add('btn');
 		btn.classList.add('btn-secondary');
-		btn.classList.add('btn-block');
+		//btn.classList.add('btn-block');
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
 		btn.classList.add('pt-3');
