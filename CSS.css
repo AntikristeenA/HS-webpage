@@ -44,3 +44,7 @@ body{
 .hr{
 	border-top: solid gray 2px;
 }
+
+#bodyD{
+	background-color: #1a1a1a;
+}
