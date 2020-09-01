@@ -10,7 +10,7 @@
 	<title>HowSounds</title>
 	<script src="https://antikristeena.github.io/HS-webpage/SoundList.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
+		<link rel="stylesheet" type="text/css" href="CSS.css">
 
 
 
@@ -18,7 +18,7 @@
 
 <body onload='copyrightF()'>
 	
-	<div class="container">
+	<div class="container" id='body' >
 		<div id="pictureD" class="container-fluid">
 		Picture goes here
 		</div>
@@ -27,26 +27,34 @@
 			<div id='controlsD'class="container">
 			
 			
-				<div class='row bg-secondary pb-3'>
+				<div class='row  back pb-3'>
 				
 					<div class='col-sm-4'>
-			
+						
+						<button id="Requestbutton" class='btn ' onclick="document.location='request'" >Request sound</button>
+						
+						<button id="contact" class='btn ' onclick="document.location='contact'" >Contact</button>
+						<button id="about" class='btn ' onclick="document.location='about' "  >About</button>
+						<hr class='hr'>
 					</div>
 					
 					<div class='col-lg-4'>
-						<button id="Sbutton" onclick="searchF()" class='btn btn-lg btn-secondary' >Search for tag:</button>
+						<button id="Sbutton" onclick="searchF()" class='btn btn-lg  btn-block' >Search for tag:</button>
 						<input id="search" type="text" class="form-control form-control-lg"  onkeydown='keyF()'>
 						
 					</div>
 					
+					
+					<!-- icons -->
 					<div class='col-lg-4'>	
-						<div class="d-flex flex-row-reverse">
+						<div class="d-flex flex-row-reverse" style="color:White;">
 							
 							
-							<button id="about" class='btn btn-secondary' onclick="document.location='about' "  >About</button>
-							<button id="contact" class='btn btn-secondary' onclick="document.location='contact'" >Contact</button>
-							<button id="Requestbutton" class='btn btn-secondary' onclick="document.location='request'" >Request sound</button>
+							<h2><a id='fbL' href='https://www.facebook.com/Howsounds-103107734744511' target="_blank"><i class="fab fa-facebook-square"></i></a>
+							<i class="fab fa-youtube-square"></i></h2>
+							
 						</div>
+						
 					</div>
 				</div> 
 			</div> 
@@ -56,11 +64,11 @@
 		<!-- players -->
 		<div class="container">
 		
-			<div class='container pt-4'>
-				<div class='row bg-secondary'>
-					<div class='col-sm-3 bg-secondary'>
+			<div class='container pt-4 '>
+				<div class='row back'>
+					<div class='col-sm-3 '>
 					</div>
-					<div id='playerErasser' class='col-lg-6 ' style="color:White;">
+					<div id='playerErasser' class='col-lg-6 ' >
 						<div id='ErraseMe'>
 						
 
@@ -68,29 +76,70 @@
 					</div>
 					
 					
-					<div class='col-sm-3 bg-secondary'>
+					<div class='col-sm-3 '>
 					</div> 
 				</div>
 			</div>
 			<!-- <object data="Sounds.html" width="500xp"> 
 			</object> -->
+			
+			<!-- Text container -->
+			<div id='introduction' class='container-fluid'>
+			<br>
+			<br>
+			<p><h1>Welcome to HowSounds!</h1>
+			<hr class='hr'>
+				<h5><i>- Free sound library and audio service for Your videos, commercials, animations, games... -</i></h5>
+			</p>
+			
+			<br>
+			<div id='text'>
+			
+			<p><h4>Here You can find free sounds for your awesome project.</h4></p>
+			
+			<div class='container-fluid'>
+			<p>
+				 If You can can not find the sound you wanted, or You want some <em>special, personalized sound</em>, feel free to send us a sound request by clicking <strong> "Request Sound"</strong> in our menu.
+				Keep in mind to describe the sound in details. Please make sure that Your email address is written correctly, so we could contacnt You, ensuring the quality of the desired free sound.
+			</p>
+			<p>	
+				Thanks to Your requests and effort of our creative team, our free sound library is growing every day, giving You high quality free sounds for Your amazing projects.
+			</p>
+			</div>
+			
+			<p><h4>You can Contact us if You need proffesional audio service.</h4></p>
+			<div class='container-fluid'>
+			<p>
+				If You have more detailed request, or need a <em>proffesional audio service</em>, feel free to contact us by pressing on a <strong>"Contact"</strong> button in our menu.
+				Keep in mind to write Your email addres correctly, so we can get back to You, and make sure to diliver high quality product for Your project.
+			<p>	
+				Focus on what matters, Your meaningful project, and leave sound in the hands of sound professionals.
+			</p>	
+			</p>
+			</div>
+			
+			</div>
+			</div>
+			
+			
+			
 			<div class='container-floating pt-5'>
 			<h2>Chose category:</h2>
 			</div>
-			<hr>
+			<hr class='hr'>
 			
 			
 			<!-- categories -->
-			<div id='bodyD' class="row pt-4" style="color:White;" >
+			<div id='bodyD' class="row pt-4"  >
 			
 			
 				
 				<div id='leftD' class="col-xl-6 ">
 					
 					<!-- change every id and onclick argument and text -->
-						<button onclick='category("animal")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#animal">Animal</button>
+						<button onclick='category("animal")' type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#animal">Animal</button>
 							
-							<div id='animal' class="collapse bg-secondary">
+							<div id='animal' class="collapse back">
 								<div id='animalE'>
 							
 								</div>
@@ -99,9 +148,9 @@
 						<br>
 						
 						<!-- change every id and onclick argument and text -->
-						<button onclick='category("house")' type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#house">House</button>
+						<button onclick='category("house")' type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#house">House</button>
 							
-							<div id='house' class="collapse bg-secondary">
+							<div id='house' class="collapse back">
 								<div id='houseE'>
 							
 								</div>
@@ -119,16 +168,16 @@
 				
 				<div id='rightD' class="col-xl-6 ">
 					
-						<button type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo2">category</button>
-						<div id="demo2" class="collapse bg-secondary"> 
+						<button type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo2">category</button>
+						<div id="demo2" class="collapse back"> 
 						
 						<audio controls> </audio>
 						
 						</div>
 						<br>
 						
-						<button type="button" class="btn btn-secondary btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo4">category</button>
-						<div id="demo4" class="collapse bg-secondary">
+						<button type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo4">category</button>
+						<div id="demo4" class="collapse back">
 						
 						<audio controls> </audio>
 						
@@ -144,9 +193,9 @@
 		<br>
 		<br>
 		<br>
-		<div id='bottomD' class="container pt-5 pb-3 mt-5 bg-secondary">
-			  <div class="d-flex justify-content-center bg-secondary mb-3">
-				<div  id='copyright'class="p-2 " style="color:White;"></div>
+		<div id='bottomD' class="container pt-5 pb-3 mt-5 back">
+			  <div class="d-flex justify-content-center  mb-3">
+				<div  id='copyright'class="p-2 "></div>
 				
 			  </div>
 		</div>
