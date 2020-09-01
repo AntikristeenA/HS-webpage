@@ -183,7 +183,7 @@ function category(cat)
 		col.classList.add('col-lg-8');
 		
 		//adding name of the record
-		col.innerHTML = '- '+soundsList[i].name;	
+		col.innerHTML = '&nbsp;&nbsp;'+soundsList[i].name;	
 		
 		//new line
 		var nl = document.createElement('br');
