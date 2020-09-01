@@ -2,16 +2,15 @@
 
 function searchF()
 {
-	//erase players	
-	var remplayers = document.getElementById("playerEraser");
-	remplayers.remove();
-	//create div as a cointainer for players
-	var playerErase = document.createElement('div');
-	playerErase.id =  "playerEraser";
-	var div = document.getElementById("players");
-	div.appendChild(playerErase);
+	//errase players and buttons
+	var ErraseMe = document.getElementById("ErraseMe");
+	ErraseMe.remove();
+	ErraseMe = document.createElement('div');
+	ErraseMe.id = 'ErraseMe';
+	var playerErasser  = document.getElementById("playerErasser");
+	playerErasser.appendChild(ErraseMe);
 	
-	playerErase.classList.add('d-flex');
+
 	//searching 
 	var tag = document.getElementById("search").value;
 	//soundsList.forEach(CreatePlayer(tag));	
@@ -20,7 +19,57 @@ function searchF()
 		for (i = 0; i < soundsList.length; i++) {
 		if (soundsList[i].tag.includes(tag))
 		{
+		//row create
+		var row = document.createElement('div');
+		ErraseMe.appendChild(row);
+		row.classList.add('row');
 		
+		//column audio create
+		var col = document.createElement('col');
+		row.appendChild(col);
+		col.classList.add('col-lg-8');
+		
+		//adding name of the record
+		col.innerHTML = '- '+soundsList[i].name;	
+		
+		//new line
+		var nl = document.createElement('br');
+		col.appendChild(nl);
+		
+		//adding audio
+		var player = document.createElement('audio');
+		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
+		player.crossorigin="anonymous";
+		player.type = "audio/mpeg";
+		player.controls = 'controls';
+		player.controls = 'download';
+		col.appendChild(player);
+		
+		
+		//column button create
+		var col = document.createElement('col');
+		row.appendChild(col);
+		col.classList.add('col-lg-4');
+		
+		//adding button
+		var btn = document.createElement('button');
+		var btnTxt = document.createTextNode("Download");
+		btn.onclick="DL('soundsList[i].name')";
+		btn.appendChild(btnTxt);
+		
+		col.appendChild(btn);
+		btn.classList.add('download');
+		btn.classList.add('btn');
+		btn.classList.add('btn-secondary');
+		btn.classList.add('btn-block');
+		btn.classList.add('btn-lg');
+		btn.classList.add('pb-3');
+		btn.classList.add('pt-3');
+		btn.classList.add('mt-3');
+		
+		
+		
+/* 		
 		//adding d-flex field audio
 		var playerFlex = document.createElement('div');
 		playerFlex.id =  "playerFlex";
@@ -39,9 +88,10 @@ function searchF()
 		//playerFlex.classList.add('');
 		
 		//adding d-flex field button
+		
 		var playerFlexB = document.createElement('div');
-		playerFlexB.id =  "playerFlexB";
-		var divB = document.getElementById("playerEraser");
+		playerFlexB.id =  "erButton";
+		var divB = document.getElementById("DlButton");
 		divB.appendChild(playerFlexB);
 		
 		//if we need to add class
@@ -77,7 +127,7 @@ function searchF()
 		btn.classList.add('download');
 		btn.classList.add('btn');
 		btn.classList.add('btn-secondary');
-		//btn.classList.add('btn-block');
+		btn.classList.add('btn-block');
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
 		btn.classList.add('pt-3');
@@ -87,7 +137,7 @@ function searchF()
 
 		//new line
 		var nl = document.createElement('br');
-		div.appendChild(nl);
+		div.appendChild(nl); */
 		}
 	}
 	
@@ -96,7 +146,7 @@ function searchF()
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		div.appendChild(dscript);
+		ErraseMe.appendChild(dscript);
 	
 }
 
@@ -104,90 +154,71 @@ function searchF()
 //function for categorie sorting
 function category(cat)
 {
-	//erase players	
-	var remplayersC = document.getElementById(cat+"E");
-	remplayersC.remove();
-	//create div as a cointainer for players
-	var catE = document.createElement('div');
-	catE.id =  cat+"E";
-	var div = document.getElementById(cat+"Div");
-	div.appendChild(catE);
 
+	//errase players and buttons
+	var ErraseMe = document.getElementById(cat+"E");
+	ErraseMe.remove();
+	ErraseMe = document.createElement('div');
+	ErraseMe.id = cat+'E';
+	var playerErasser  = document.getElementById(cat);
+	playerErasser.appendChild(ErraseMe);
+	
+
+	//searching 
+	var tag = cat
 	//soundsList.forEach(CreatePlayer(tag));	
 	
 		var i;
 		for (i = 0; i < soundsList.length; i++) {
-		if (soundsList[i].tag.includes(cat))
+		if (soundsList[i].tag.includes(tag))
 		{
+		//row create
+		var row = document.createElement('div');
+		ErraseMe.appendChild(row);
+		row.classList.add('row');
 		
+		//column audio create
+		var col = document.createElement('col');
+		row.appendChild(col);
+		col.classList.add('col-lg-8');
 		
-		//adding d-flex field audio
-		var playerFlex = document.createElement('div');
-		playerFlex.id =  "playerFlex";
-		var div = document.getElementById(cat+"E");
-		div.appendChild(playerFlex);
-		
-		div.classList.add('d-flex');
-		
-		//name of the record
-		playerFlex.innerHTML = '- '+soundsList[i].name;	
+		//adding name of the record
+		col.innerHTML = '- '+soundsList[i].name;	
 		
 		//new line
 		var nl = document.createElement('br');
-		playerFlex.appendChild(nl);
+		col.appendChild(nl);
 		
-		//if we need to add class
-		//playerFlex.classList.add('');
-		
-		//adding d-flex field button
-		var playerFlexB = document.createElement('div');
-		playerFlexB.id =  "playerFlexB";
-		var divB = document.getElementById(cat+"E");
-		divB.appendChild(playerFlexB);
-		
-		//if we need to add class
-		//playerFlexB.classList.add('');
-		
-		
+		//adding audio
 		var player = document.createElement('audio');
-		//player.id = "player";
 		player.src = 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+soundsList[i].name+'.mp3';
 		player.crossorigin="anonymous";
 		player.type = "audio/mpeg";
 		player.controls = 'controls';
-		//player.preload='auto';
 		player.controls = 'download';
-		var div = document.getElementById(cat+"E");
-		playerFlex.appendChild(player);
+		col.appendChild(player);
 		
-	 
-	 var btn = document.createElement('button');
+		
+		//column button create
+		var col = document.createElement('col');
+		row.appendChild(col);
+		col.classList.add('col-lg-4');
+		
+		//adding button
+		var btn = document.createElement('button');
 		var btnTxt = document.createTextNode("Download");
-		btn.id ='btndwl';
-		
-		btn.name=soundsList[i].name;
 		btn.onclick="DL('soundsList[i].name')";
-		
 		btn.appendChild(btnTxt);
-		//btn.classList.add("btn btn-secondary btn-block btn-lg pb-3 pt-3");
-		//dl.appendChild(btn);
-		playerFlexB	.appendChild(btn);
 		
-		//download button style
-		//class download is important for downloading function
+		col.appendChild(btn);
 		btn.classList.add('download');
 		btn.classList.add('btn');
 		btn.classList.add('btn-secondary');
-		//btn.classList.add('btn-block');
+		btn.classList.add('btn-block');
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
 		btn.classList.add('pt-3');
-		//btn.classList.add('mb-2');
 		btn.classList.add('mt-3');
-
-		//new line
-		var nl = document.createElement('br');
-		div.appendChild(nl);
 		}
 	}
 	
@@ -196,7 +227,8 @@ function category(cat)
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		div.appendChild(dscript);
+		ErraseMe.appendChild(dscript);
+	
 }
 
 
