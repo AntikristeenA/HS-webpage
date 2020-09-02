@@ -20,187 +20,157 @@
 <body onload='copyrightF()'>
 	
 	<div class="container" id='body' >
-		<div id="pictureD" class="container-fluid">
-		<img class="img-fluid" src="bkg.PNG" alt="Howsounds picture">
-		</div>
 		
+		<br>
+		<div class='row'>
 		
-			<div id='controlsD'class="container">
+			<div class="col-md-3">
+				<div id="pictureD" class="container-fluid">
+					<img class="img-fluid" src="HS.PNG" alt="Howsounds picture">
+				</div>
+			</div>
 			
+			<div class="col-md-6">
+				<div class="btn-group btn-group-ml">
+				  <button id="Requestbutton" class='btn '  >CATEGORIES</button>
+				  <button id="Requestbutton" class='btn ' onclick="document.location='request'" >REQUEST SOUND</button>
+				  <button id="contact" class='btn ' onclick="document.location='contact'" >CONTACT</button>
+				  <button id="about" class='btn ' onclick="document.location='about' "  >ABOUT</button>
+				</div>
+			</div>
 			
-				<div class='row  back pb-3'>
-				
-					<div class='col-sm-4'>
-						
-						<button id="Requestbutton" class='btn ' onclick="document.location='request'" >Request sound</button>
-						
-						<button id="contact" class='btn ' onclick="document.location='contact'" >Contact</button>
-						<button id="about" class='btn ' onclick="document.location='about' "  >About</button>
-						<hr class='hr'>
-					</div>
-					
-					<div class='col-lg-4'>
-						<button id="Sbutton" onclick="searchF()" class='btn btn-lg  btn-block' >Search for tag:</button>
-						<input id="search" type="text" class="form-control form-control-lg"  onkeydown='keyF()'>
-						
-					</div>
-					
-					
-					<!-- icons -->
-					<div class='col-lg-4'>	
-						<div class="d-flex flex-row-reverse" style="color:White;">
-							
-							
-							<h2><a id='fbL' href='https://www.facebook.com/Howsounds-103107734744511' target="_blank"><i class="fab fa-facebook-square"></i></a>
+			<div class="col-md-2">
+				<input id="search" value='Search sounds...' type="text" class="form-control form-control-sm mt-1"  onclick='clean()' onblur ='searchValue()' onkeydown='keyF()'>
+			</div>
+			<div class="col-md-1">
+				<h2><a id='fbL' href='https://www.facebook.com/Howsounds-103107734744511' target="_blank"><i class="fab fa-facebook-square mt-1"></i></a>
 							<i class="fab fa-youtube-square"></i></h2>
-							
-						</div>
+			</div>
+			
+		</div>
+	
+		
+		<div class='row'>
+			<div class='col-lg-6'>
+				<span id='bigLetters'><b>Free</b></span>
+				<br>
+				<span id='mediumLetters'><b>Sound Library</b></span>
+				<br>
+				<div id='normalLetters'>Free sound library and audio service for Your videos, commercials, animations, games...</div>
+				<br>
+				<br>
+				<br>
+				
+				<div class='row'>
+					<div class='col-sm-2'>
 						
 					</div>
-				</div> 
-			</div> 
-			
-	
-						 
-		<!-- players -->
-		<div class="container">
-		
-			<div class='container pt-4 '>
-				<div class='row back'>
-					<div class='col-sm-3 '>
+					<div class='col-bg-6'>
+						<button id='LMButton' class='btn '  onclick="document.location='about' " >Learn more</button>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					
+				<br><br>
+				<br>
 					</div>
-					<div id='playerErasser' class='col-lg-6 ' >
-						<div id='ErraseMe'>
+					<div class='col-sm-4'>
+					</div>
+				
+				</div>
+
+			</div>
+			<div class='col-sm-6' id='playerErasser' >
+				<div id='ErraseMe'>
 						
 
-						</div>
-					</div>
-					
-					
-					<div class='col-sm-3 '>
-					</div> 
 				</div>
 			</div>
-			<!-- <object data="Sounds.html" width="500xp"> 
-			</object> -->
-			
-			<!-- Text container -->
-			<div id='introduction' class='container-fluid'>
-			<br>
-			<br>
-			<p><h1>Welcome to HowSounds!</h1>
-			<hr class='hr'>
-				<h5><i>- Free sound library and audio service for Your videos, commercials, animations, games... -</i></h5>
-			</p>
-			
-			<br>
-			<div id='text'>
-			
-			<p><h4>Here You can find free sounds for your awesome project.</h4></p>
-			
-			<div class='container-fluid'>
-			<p>
-				 If You can can not find the sound you wanted, or You want some <em>special, personalized sound</em>, feel free to send us a sound request by clicking <strong> "Request Sound"</strong> in our menu.
-				Keep in mind to describe the sound in details. Please make sure that Your email address is written correctly, so we could contacnt You, ensuring the quality of the desired free sound.
-			</p>
-			<p>	
-				Thanks to Your requests and effort of our creative team, our free sound library is growing every day, giving You high quality free sounds for Your amazing projects.
-			</p>
-			</div>
-			
-			<p><h4>You can Contact us if You need proffesional audio service.</h4></p>
-			<div class='container-fluid'>
-			<p>
-				If You have more detailed request, or need a <em>proffesional audio service</em>, feel free to contact us by pressing on a <strong>"Contact"</strong> button in our menu.
-				Keep in mind to write Your email addres correctly, so we can get back to You, and make sure to diliver high quality product for Your project.
-			<p>	
-				Focus on what matters, Your meaningful project, and leave sound in the hands of sound professionals.
-			</p>	
-			</p>
-			</div>
-			
-			</div>
-			</div>
-			
-			
-			
-			<div class='container-floating pt-5'>
-			<h2>Chose category:</h2>
-			</div>
-			<hr class='hr'>
-			
-			
-			<!-- categories -->
-			<div id='bodyD' class="row pt-4"  >
-			
-			
-				
-				<div id='leftD' class="col-xl-6 ">
-					
-					<!-- change every id and onclick argument and text -->
-						<button onclick='category("animal")' type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#animal">Animal</button>
-							
-							<div id='animal' class="collapse back">
-								<div id='animalE'>
-							
-								</div>
-							</div>
-							
-						<br>
-						
-						<!-- change every id and onclick argument and text -->
-						<button onclick='category("house")' type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#house">House</button>
-							
-							<div id='house' class="collapse back">
-								<div id='houseE'>
-							
-								</div>
-							</div>
-							
-						<br>
-						
-						
-						
-						
-				
-			</div>
-				<!-- <div class='col-sm-2 '>
-				</div> -->
-				
-				<div id='rightD' class="col-xl-6 ">
-					
-						<button type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo2">category</button>
-						<div id="demo2" class="collapse back"> 
-						
-						<audio controls> </audio>
-						
-						</div>
-						<br>
-						
-						<button type="button" class="btn  btn-block btn-lg pb-3 pt-3" data-toggle="collapse" data-target="#demo4">category</button>
-						<div id="demo4" class="collapse back">
-						
-						<audio controls> </audio>
-						
-						</div>
-						<br>
-						
-				</div>
+		</div>
 		
+		<div id='exploreSound'>
+		
+			<p id='exploreSoundsTitle'><b>Explore sounds</b></p>
 			
+			<div class='row'>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
 			</div>
-			
+			<div class='row'>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+				<div class ='col-sm-2'>
+				</div>
+			</div>	
+		</div>
+	
+		<div id='canNotFindSound'>
+		<br>
+		<br>
+		<br>
+			<div class='row'>
+				<div class='col-md-7'>
+					<p id='mediumLetters'> <b>Can't find the 
+					<br>sound you wanted...</b></p>
+					<p id='normalLetters'> Do You want special,personalized sound?
+					<br>
+					- feel free to send us a sund request!</p>
+				</div>
+				<div class='col-sm-5'>
+					
+				</div>
+			</div>
+		
+		
 		</div>
 		<br>
-		
 		<br>
-		<div id='bottomD' class="container pt-5 pb-3 mt-5 back">
-			  <div class="d-flex justify-content-center  mt-5">
+		<br>
+		<br>
+		<div id='whiteLine'>
+		<br>
+		</div>
+		
+		<div id='bottomD' class="row back">
+			<div class='col-lg-4'>
+				<div id="pictureD" class="container-fluid">
+					<img class="img-fluid" src="HSBottom.PNG" alt="Howsounds picture">
+				</div>
+			</div>
+			 <div class="col-lg-4">
+			 <br>
+			<br>
+				<div class="d-flex justify-content-center mt-5">
 				<div  id='copyright'class="p-2 "></div>
 				
 			  </div>
+			 </div>
+			 <div class='col-sm-4'>
+			 </div>
 		</div>
 	</div>
+	
 </body>
 </html>
 
