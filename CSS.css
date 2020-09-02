@@ -1,47 +1,67 @@
-/*links*/
-#fbL {
-  color: #f0f0f0;
+.btn-group{
+	left:10%;
 }
 
-#fbL :hover {
-  color: white;
-}
-
-
-#text{
-	background-color: #1a1a1a;
+#fbL{
+	color:white;
 }
 
 #body{
-	background-color:#242424;
-}
-
-button{
-	background-color: #000000;
-}
-
-.btn{
-	background-color: #000000;
-	color: #f0f0f0;
-}
-
-.btn:hover{
-
+	background-color: #000000; 
 	color: white;
 }
 
-.back{
-	background-color: #000000;
-	color: #f0f0f0;
-}
-
 body{
-	background-color:black;
-	color:#f0f0f0;
+ 	font-family: "Raleway";
+	background-color:grey; 
 }
 
+#playerErasser{
+	background-image: url('HSm.PNG');
+}
 
-.hr{
-	border-top: solid gray 2px;
+.btn{
+	color:white;
+}
+
+#bigLetters{
+	font-size: 80px;
+	color: white;
+	line-height: 0.9;
+	margin-left:20px;
+}
+
+#mediumLetters{
+	font-size: 60px;
+	color: grey;
+	line-height: 0.99;
+	margin-left:20px;
+}
+
+#normalLetters{
+	font-size: 20px;
+	color: white;
+	margin-left:20px;
+}
+
+#LMButton{
+	border-radius: 12%;
+	background-color: orange;
+	color:black;
+	font-size:30px;
+	}
+
+#exploreSoundsTitle{
+	color:black;
+	font-size:40px;
+	text-align:center;
+}
+
+#exploreSound{
+	background-color:white;
+}
+
+#whiteLine{
+	background-color:white;
 }
 

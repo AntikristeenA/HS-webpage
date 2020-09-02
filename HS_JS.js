@@ -60,7 +60,7 @@ function searchF()
 		col.appendChild(btn);
 		btn.classList.add('download');
 		btn.classList.add('btn');
-		btn.classList.add('btn-secondary');
+		//btn.classList.add('btn-secondary');
 		btn.classList.add('btn-block');
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
@@ -213,7 +213,7 @@ function category(cat)
 		col.appendChild(btn);
 		btn.classList.add('download');
 		btn.classList.add('btn');
-		btn.classList.add('btn-secondary');
+		//btn.classList.add('btn-secondary');
 		btn.classList.add('btn-block');
 		btn.classList.add('btn-lg');
 		btn.classList.add('pb-3');
@@ -250,7 +250,15 @@ input.addEventListener("keyup", function(event) {
 });
 }
 
+function clean(){
+	document.getElementById('search').value='';
+}
 
+function searchValue(){
+	var val =document.getElementById('search');
+	if(val.value=='')
+		val.value='Search sounds...';
+}
 
 
 function copyrightF() {
