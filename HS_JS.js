@@ -28,7 +28,7 @@ function searchF()
 		//column audio create
 		var col = document.createElement('col');
 		row.appendChild(col);
-		col.classList.add('col-lg-8');
+		col.classList.add('col-lg-7');
 		
 		//adding name of the record
 		col.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;'+soundsList[i].name;	
@@ -50,7 +50,7 @@ function searchF()
 		//column button create
 		var col = document.createElement('col');
 		row.appendChild(col);
-		col.classList.add('col-lg-4');
+		col.classList.add('col-lg-5');
 		
 		//adding button
 		var btn = document.createElement('button');
