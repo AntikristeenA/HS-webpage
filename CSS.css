@@ -1,5 +1,5 @@
-#menu{
-	left:20%;
+.btn-group{
+	left:10%;
 }
 
 #fbL{
@@ -59,6 +59,19 @@ body{
 
 #exploreSound{
 	background-color:white;
+	color:black;
+}
+
+.blackbtn{
+	background-color:black;
+}
+
+.download{
+	background-color:black;
+}
+
+#accordion{
+	
 }
 
 #whiteLine{

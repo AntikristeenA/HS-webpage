@@ -31,15 +31,14 @@
 			</div>
 			
 			<div class="col-md-6">
-				<!-- <div class="btn-group btn-group-ml"> -->
+				
 				<span id='menu'>
 				  <button id="Requestbutton" class='btn '  >MUSIC (beta)</button>
 				  <button id="Requestbutton" class='btn ' onclick="document.location='request'" >REQUEST SOUND</button>
 				  <button id="contact" class='btn ' onclick="document.location='contact'" >CONTACT</button>
 				  <button id="about" class='btn ' onclick="document.location='about' "  >ABOUT</button>
 				  </span>
-<!-- 				</div>
- -->			</div>
+			</div>
 			
 			<div class="col-md-2">
 				<input id="search" value='Search sounds...' type="text" class="form-control form-control-sm mt-1"  onclick='clean()' onblur ='searchValue()' onkeydown='keyF()'>
@@ -93,24 +92,61 @@
 			</div>
 		</div>
 		
-		<div id='exploreSound'>
+		<div class='container' id='exploreSound'>
 		
 			<p id='exploreSoundsTitle'><b>Explore sounds</b></p>
 			
-			<div class='row'>
-				<div class ='col-sm-2'>
+			<div class='row' >
+				<div class ='col-sm-1'>
 				</div>
 				<div class ='col-sm-2'>
+					<button onclick='category("animal")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#animal">Animal</button>
 				</div>
 				<div class ='col-sm-2'>
+					<button onclick='category("house")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#house">House</button>
 				</div>
 				<div class ='col-sm-2'>
+					<button onclick='category("outdoor")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#outdoor">Outdoor</button>
 				</div>
 				<div class ='col-sm-2'>
+					<button onclick='category("human")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#human">Human</button>
 				</div>
 				<div class ='col-sm-2'>
+					<button onclick='category("breaking")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#breaking">Breaking</button>
+				</div>
+				<div class ='col-sm-1'>
 				</div>
 			</div>
+			<div class='container'>
+			<div class='row ml-4' id='accordion'>
+				<div id='animal' class="collapse back" data-parent="#accordion">
+					<div id='animalE'>
+							
+					</div>
+				</div>
+				<div id='house' class="collapse back" data-parent="#accordion">
+					<div id='houseE'>
+				
+					</div>
+				</div>
+				<div id='outdoor' class="collapse back" data-parent="#accordion">
+					<div id='outdoorE'>
+				
+					</div>
+				</div>
+				<div id='human' class="collapse back" data-parent="#accordion">
+					<div id='humanE'>
+				
+					</div>
+				</div>
+				<div id='breaking' class="collapse back" data-parent="#accordion">
+					<div id='breakingE'>
+				
+					</div>
+				</div>
+			</div>
+			</div>
+			
 			<div class='row'>
 				<div class ='col-sm-2'>
 				</div>
