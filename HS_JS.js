@@ -12,7 +12,8 @@ function searchF()
 	
 
 	//searching 
-	var tag = document.getElementById("search").value;
+	var tagg = document.getElementById("search").value;
+	var tag = tagg.toLowerCase();
 	//soundsList.forEach(CreatePlayer(tag));	
 	
 		var i;
