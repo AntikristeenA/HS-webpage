@@ -21,10 +21,6 @@ var soundsList = [
 		tag:['human',"breathing", "panting", 'inhaling', 'exhaling', 'gasping', 'respiring', "breath", "pant", 'inhale', 'exhale', 'gasp', 'respire']
 	},
 	{
-		name:"cloth slide",
-		tag:['human', "cloth", "sliding", 'gliding', 'pulling', 'pushing', 'moving', "slide", 'glide', 'pull', 'push', 'move']
-	},
-	{
 		name:"crunch",
 		tag:['house','human', "crunch", "crunching"]
 	},
@@ -97,11 +93,11 @@ var soundsList = [
 		tag:["outdoor", 'squelch', 'squelching']
 	},
 	{
-		name:"squelch 1",
+		name:"squelch 2",
 		tag:["outdoor", 'squelch', 'squelching']
 	},
 	{
-		name:"squelch 2",
+		name:"squelch 3",
 		tag:["outdoor", 'squelch', 'squelching']
 	},
 	{
