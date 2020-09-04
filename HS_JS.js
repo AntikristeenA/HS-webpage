@@ -57,7 +57,9 @@ function searchF()
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.onclick="DL('soundsList[i].name')";
+			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
+			
 			
 			colBR.appendChild(btn);
 			btn.classList.add('download');
@@ -112,7 +114,9 @@ function searchF()
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.onclick="DL('soundsList[i].name')";
+			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
+			
 			
 			col.appendChild(btn);
 			btn.classList.add('download');
@@ -233,6 +237,7 @@ function category(cat)
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
+			btn.name=soundsList[i].name;
 			btn.onclick="DL('soundsList[i].name')";
 			btn.appendChild(btnTxt);
 			
@@ -288,6 +293,7 @@ function category(cat)
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
+			btn.name=soundsList[i].name;
 			btn.onclick="DL('soundsList[i].name')";
 			btn.appendChild(btnTxt);
 			
