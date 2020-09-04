@@ -12,7 +12,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-		<link rel="stylesheet" type="text/css" href="CSS.css">
+	<link rel="stylesheet" type="text/css" href="https://antikristeena.github.io/HS-webpage/CSS.css">
 
 
 
@@ -27,12 +27,13 @@
 		
 			<div class="col-md-3">
 				<div id="pictureD" class="container-fluid">
-					<img class="img-fluid" src="HS.PNG" alt="Howsounds picture">
+					<a href=https://howsounds.me><img class="img-fluid" src="HS.PNG" alt="Howsounds picture"></a>
 				</div>
 			</div>
 			
 			<div class="col-md-6">
-				
+
+				<div class=' float-md-right'>
 				<span id='menu'>
 				  <button id="Requestbutton" class='btn '  >MUSIC (beta)</button>
 				  <button id="Requestbutton" class='btn ' onclick="document.location='request'" >REQUEST SOUND</button>
@@ -40,17 +41,34 @@
 				  <button id="about" class='btn ' onclick="document.location='about' "  >ABOUT</button>
 				  </span>
 			</div>
+			</div>
 			
 			<div class="col-md-2">
 				<input id="search" value='Search sounds...' type="text" class="form-control form-control-sm mt-1"  onclick='clean()' onblur ='searchValue()' onkeydown='keyF()'>
 			</div>
 			<div class="col-md-1">
 				<h2><a id='fbL' href='https://www.facebook.com/Howsounds-103107734744511' target="_blank"><i class="fab fa-facebook-square mt-1"></i></a>
-							<i class="fab fa-youtube-square"></i></h2>
+					<a id='fbL' href='' target="_blank">		<i class="fab fa-youtube-square"></i></a></h2>
 			</div>
 			
+		</div>		
+		
+		<div class='container ' id='searchFieldWhite'>
+		<div class='row float-sm-right'> 
+			<button id='closeButton' class='btn mr-3 mt-2' onclick='SearchErraser()'>&times;</button>
 		</div>
-	
+			<!-- <div class='row ml-4' id='accordion'> -->
+				<div class='row mx-auto mt-5 mb-4' >
+				
+					<div id='searchField' class="back mx-auto">
+						<div id='searchFieldE'>
+							
+								
+						</div>
+					</div>
+				</div>
+		</div>
+		
 		
 		<div class='row'>
 			<div class='col-lg-6'>
@@ -95,57 +113,59 @@
 		
 		<div class='container' id='exploreSound'>
 		
-			<p id='exploreSoundsTitle'><b>Explore sounds</b></p>
+			<p id='exploreSoundsTitle' class='pt-4'><b>Explore sounds</b></p>
+			<hr>
 			
 			<div class='row' >
 				<div class ='col-sm-1'>
 				</div>
 				<div class ='col-sm-2'>
-					<button onclick='category("animal")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#animal">Animal</button>
+					<button onclick='category("animal")' type="button" id='animalB' class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#animal">Animal</button>
 				</div>
 				<div class ='col-sm-2'>
-					<button onclick='category("house")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#house">House</button>
+					<button onclick='category("house")' type="button" id='houseB' class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#house">House</button>
 				</div>
 				<div class ='col-sm-2'>
-					<button onclick='category("outdoor")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#outdoor">Outdoor</button>
+					<button onclick='category("outdoor")' type="button" id='outdoorB' class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#outdoor">Outdoor</button>
 				</div>
 				<div class ='col-sm-2'>
-					<button onclick='category("human")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#human">Human</button>
+					<button onclick='category("human")' type="button" id='humanB' class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#human">Human</button>
 				</div>
 				<div class ='col-sm-2'>
-					<button onclick='category("breaking")' type="button" class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#breaking">Breaking</button>
+					<button onclick='category("breaking")' type="button" id='breakingB' class="btn  btn-block btn-sm blackbtn" data-toggle="collapse" data-target="#breaking">Breaking</button>
 				</div>
 				<div class ='col-sm-1'>
 				</div>
 			</div>
 			<div class='container'>
-			<div class='row ml-4' id='accordion'>
-				<div id='animal' class="collapse back" data-parent="#accordion">
-					<div id='animalE'>
-							
+			<!-- <div class='row ml-4' id='accordion'> -->
+				<div class='row mx-auto mt-5 mb-4' id='accordion'>
+					<div id='animal' class="collapse back mx-auto" data-parent="#accordion">
+						<div id='animalE'>
+								
+						</div>
+					</div>
+					<div id='house' class="collapse back mx-auto" data-parent="#accordion">
+						<div id='houseE'>
+					
+						</div>
+					</div>
+					<div id='outdoor' class="collapse back mx-auto" data-parent="#accordion">
+						<div id='outdoorE'>
+					
+						</div>
+					</div>
+					<div id='human' class="collapse back mx-auto" data-parent="#accordion">
+						<div id='humanE'>
+					
+						</div>
+					</div>
+					<div id='breaking' class="collapse back mx-auto" data-parent="#accordion">
+						<div id='breakingE'>
+					
+						</div>
 					</div>
 				</div>
-				<div id='house' class="collapse back" data-parent="#accordion">
-					<div id='houseE'>
-				
-					</div>
-				</div>
-				<div id='outdoor' class="collapse back" data-parent="#accordion">
-					<div id='outdoorE'>
-				
-					</div>
-				</div>
-				<div id='human' class="collapse back" data-parent="#accordion">
-					<div id='humanE'>
-				
-					</div>
-				</div>
-				<div id='breaking' class="collapse back" data-parent="#accordion">
-					<div id='breakingE'>
-				
-					</div>
-				</div>
-			</div>
 			</div>
 			
 			<div class='row'>
@@ -172,10 +192,9 @@
 				<div class='col-md-7'>
 					<p id='mediumLetters'> <b>Can't find the 
 					<br>sound you wanted...</b></p>
-					<p id='normalLetters'> Do You need special, personalized sound?
+					<p id='normalLetters'> Do You want special, personalized sound?
 					<br>
-					- feel free to send us a sund request, or 
-					contact us for audio service!</p>
+					- feel free to send us a sund request!</p>
 				</div>
 				<div class='col-sm-5'>
 					

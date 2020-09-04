@@ -1,10 +1,5 @@
-.btn-group{
-	left:10%;
-}
 
-#fbL{
-	color:white;
-}
+
 
 #body{
 	background-color: #000000; 
@@ -20,8 +15,24 @@ body{
 	background-image: url('HSm.PNG');
 }
 
-.btn{
+/* .btn ,#fbL{
+	color:#d9d9d9;
+}
+
+#fbL:hover, .btn:hover{
 	color:white;
+} */
+
+.btn ,#fbL{
+	color:white;
+}
+
+#fbL:hover, .btn:hover, #fbL:active, .btn:active{
+	color:orange;
+}
+
+#search{
+	border-radius:42px;
 }
 
 #bigLetters{
@@ -45,7 +56,8 @@ body{
 }
 
 #LMButton{
-	border-radius: 12%;
+	
+	border-radius:42px;
 	background-color: orange;
 	color:black;
 	font-size:30px;
@@ -57,9 +69,14 @@ body{
 	text-align:center;
 }
 
-#exploreSound{
+#exploreSound, #searchFieldWhite{
 	background-color:white;
 	color:black;
+}
+
+#closeButton{
+	visibility: hidden;
+	background-color:red;
 }
 
 .blackbtn{
@@ -76,5 +93,11 @@ body{
 
 #whiteLine{
 	background-color:white;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: white;
+  color: black;
 }
 
