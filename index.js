@@ -148,7 +148,7 @@ transporter.sendMail(mailOptions, function(error, info){
 
 //routing Landing page
 app.get('/', (req, res) => {
-   fs.readFile('index.html', function(err, data) {
+   fs.readFile('https://antikristeena.github.io/HS-webpage/index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -159,7 +159,7 @@ app.get('/', (req, res) => {
 
 //routing contact
 app.get('/contact', function (req, res) {
-     fs.readFile('contact.html', function(err, data) {
+     fs.readFile('https://antikristeena.github.io/HS-webpage/contact.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -170,7 +170,7 @@ app.get('/contact', function (req, res) {
 
 //routing request
 app.get('/request', function (req, res) {
-     fs.readFile('request.html', function(err, data) {
+     fs.readFile('https://antikristeena.github.io/HS-webpage/request.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -179,7 +179,7 @@ app.get('/request', function (req, res) {
 
 //routing index
 app.get('/index', function (req, res) {
-     fs.readFile('index.html', function(err, data) {
+     fs.readFile('https://antikristeena.github.io/HS-webpage/index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -188,7 +188,7 @@ app.get('/index', function (req, res) {
 
 //routing about
 app.get('/about', function (req, res) {
-     fs.readFile('about.html', function(err, data) {
+     fs.readFile('https://antikristeena.github.io/HS-webpage/about.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -635,7 +635,7 @@ function copyrightF() {
 
 
 
-
+/* 
 //download script
 $('.download').on('click', function () {
 	var filename = $(this).attr('name');
@@ -657,7 +657,7 @@ $('.download').on('click', function () {
         }
     })
 })
-
+ */
 
 //server
 const port = process.env.PORT || '8080';
