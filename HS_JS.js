@@ -164,12 +164,12 @@ function searchF()
 		closeButton.style.visibility='visible';
 	}
 	//loading script for downloading
-	/* var dscript = document.createElement('script');
+	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
 		var Bo = document.getElementById('body');
-		Bo.appendChild(dscript); */
+		Bo.appendChild(dscript);
 	
 
 	
@@ -398,12 +398,7 @@ function searchValue(){
 
 function copyrightF() {
 	
-	var dscript = document.createElement('script');
-		
-		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
-		//dl.appendChild(btn);
-		var Bo = document.getElementById('body');
-		Bo.appendChild(dscript);
+	
 	
   var d = new Date();
   var n = d.getFullYear();
