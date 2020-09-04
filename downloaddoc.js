@@ -18,6 +18,7 @@ $('.download').on('click', function () {
             a.click();
             a.remove();
             window.URL.revokeObjectURL(url);
+			return();
         }
     })
 })
