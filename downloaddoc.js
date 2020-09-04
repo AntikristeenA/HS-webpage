@@ -21,3 +21,14 @@ $('.download').on('click', function () {
         }
     })
 })
+
+//button close search
+$('#closeButton').on('click', function () {
+	var cat= 'searchField';
+	var ErraseMe = document.getElementById(cat+"E");
+	ErraseMe.remove();
+	ErraseMe = document.createElement('div');
+	ErraseMe.id = cat+'E';
+	var playerErasser  = document.getElementById(cat);
+	playerErasser.appendChild(ErraseMe);
+})
