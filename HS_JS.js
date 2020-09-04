@@ -17,9 +17,7 @@ function searchF()
 	var space2 = document.createElement('br');
 	ErraseMe.appendChild(space2);
 	
-	//close Button
-	var closeButton = document.getElementById('closeButton');
-	closeButton.style.visibility='visible';
+	
 
 
 	//soundsList.forEach(CreatePlayer(tag));	
@@ -149,7 +147,18 @@ function searchF()
 			}
 		}
 	}
-	
+	if (j==0)
+	{
+		SearchErraser();
+		var noFound = document.getElementById('noFound');
+		noFound.style.visibility='visible'; 
+		
+	}
+	else{
+		//close Button
+		var closeButton = document.getElementById('closeButton');
+		closeButton.style.visibility='visible';
+	}
 	//loading script for downloading
 	var dscript = document.createElement('script');
 		
@@ -325,6 +334,12 @@ function category(cat)
 	
 }
 
+function hideAlert()
+{
+	var noFound = document.getElementById('noFound');
+	noFound.style.visibility='hidden'; 
+}
+
 function SearchErraser()
 {
 	var cat= 'searchField';
@@ -360,6 +375,7 @@ input.addEventListener("keyup", function(event) {
   
 });
 }
+
 
 function clean(){
 	document.getElementById('search').value='';

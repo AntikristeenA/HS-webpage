@@ -35,6 +35,10 @@ body{
 	border-radius:42px;
 }
 
+#noFound{
+	visibility:hidden; 
+}
+
 #bigLetters{
 	font-size: 80px;
 	color: white;
