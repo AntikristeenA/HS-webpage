@@ -164,11 +164,11 @@ function searchF()
 		closeButton.style.visibility='visible';
 	}
 	//loading script for downloading
-	/* var dscript = document.createElement('script');
+	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		ErraseMe.appendChild(dscript); */
+		ErraseMe.appendChild(dscript);
 	
 
 	
@@ -332,11 +332,11 @@ function category(cat)
 	}
 	
 	//loading script for downloading
-	/* var dscript = document.createElement('script');
+	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		ErraseMe.appendChild(dscript); */
+		ErraseMe.appendChild(dscript);
 	
 }
 
