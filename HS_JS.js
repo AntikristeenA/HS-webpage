@@ -168,7 +168,8 @@ function searchF()
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		ErraseMe.appendChild(dscript);
+		var Bo = document.getElementById('body');
+		Bo.appendChild(dscript);
 	
 
 	
@@ -336,7 +337,8 @@ function category(cat)
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		ErraseMe.appendChild(dscript);
+		var Bo = document.getElementById('body');
+		Bo.appendChild(dscript);
 	
 }
 
