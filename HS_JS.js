@@ -56,7 +56,9 @@ function searchF()
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
-			btn.onclick=DL(soundsList[i].name);
+			btn.onclick=function(){
+			DL(soundsList[i].name);;return false;
+			};
 			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
 			
@@ -113,7 +115,9 @@ function searchF()
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
-			btn.onclick=DL(soundsList[i].name);
+			btn.onclick=function(){
+			DL(soundsList[i].name);;return false;
+			};
 			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
 			
@@ -243,7 +247,9 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			btn.onclick=DL(soundsList[i].name);
+			btn.onclick=function(){
+			DL(soundsList[i].name);;return false;
+			};
 			btn.appendChild(btnTxt);
 			
 			colBR.appendChild(btn);
@@ -299,7 +305,9 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			btn.onclick=DL(soundsList[i].name);
+			btn.onclick=function(){
+			DL(soundsList[i].name);;return false;
+			};
 			btn.appendChild(btnTxt);
 			
 			col.appendChild(btn);
