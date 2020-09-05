@@ -56,7 +56,7 @@ function searchF()
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
-			btn.onclick="DL('soundsList[i].name')";
+			//btn.onclick="DL('soundsList[i].name')";
 			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
 			
@@ -162,14 +162,18 @@ function searchF()
 		//close Button
 		var closeButton = document.getElementById('closeButton');
 		closeButton.style.visibility='visible';
-	}
-	//loading script for downloading
+		
+		
+		
+		//loading script for downloading
 	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
 		var Bo = document.getElementById('bottomD');
 		Bo.appendChild(dscript);
+	}
+	
 	
 
 	
@@ -295,7 +299,7 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			btn.onclick="DL('soundsList[i].name')";
+			//btn.onclick="DL('soundsList[i].name')";
 			btn.appendChild(btnTxt);
 			
 			col.appendChild(btn);
