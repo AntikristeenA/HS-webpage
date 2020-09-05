@@ -65,10 +65,6 @@ var soundsList = [
 		tag:['human', "house", "squirting", 'squeeze', "squirt", 'squeezing']
 	},
 	{
-		name:"door knocking",
-		tag:["house", "knocking", 'door knocking', 'hitting', "knock", 'door knock', 'hit']
-	},
-	{
 		name:"door knocking 2",
 		tag:["house", "knocking", 'door knocking', 'hitting', "knock", 'door knock', 'hit']
 	},
