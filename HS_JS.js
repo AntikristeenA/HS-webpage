@@ -510,7 +510,7 @@ function requestContent()
 	btnSub.classList.add('btn-lg');
 	btnSub.onclick=function(){
 			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
-			document.getElementById("submitR").click();;return false;
+			document.getElementById("submitR").click();
 			};
 	
 		
