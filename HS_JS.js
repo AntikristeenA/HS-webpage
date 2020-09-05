@@ -113,7 +113,7 @@ function searchF()
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
-			btn.onclick="DL('soundsList[i].name')";
+			btn.onclick=DL(soundsList[i].name);
 			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
 			
@@ -165,13 +165,13 @@ function searchF()
 		
 		
 		
-		//loading script for downloading
+	/* 	//loading script for downloading
 	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
 		var Bo = document.getElementById('bottomD');
-		Bo.appendChild(dscript);
+		Bo.appendChild(dscript); */
 	}
 	
 	
@@ -299,7 +299,7 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			//btn.onclick="DL('soundsList[i].name')";
+			btn.onclick=DL(soundsList[i].name);
 			btn.appendChild(btnTxt);
 			
 			col.appendChild(btn);
@@ -336,13 +336,13 @@ function category(cat)
 		}
 	}
 	
-	//loading script for downloading
+	/* //loading script for downloading
 	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
 		var Bo = document.getElementById('bottomD');
-		Bo.appendChild(dscript);
+		Bo.appendChild(dscript); */
 	
 }
 
@@ -397,6 +397,28 @@ function searchValue(){
 	var val =document.getElementById('search');
 	if(val.value=='')
 		val.value='Search sounds...';
+}
+
+
+function DL(filename){
+
+    $.ajax({
+        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
+        method: 'GET',
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = filename+'.mp3';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    })
 }
 
 
