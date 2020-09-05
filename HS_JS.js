@@ -510,7 +510,7 @@ function requestContent()
 	btnSub.classList.add('btn-lg');
 	btnSub.onclick=function(){
 			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.')
-			document.getElementById("submitR").click();;;return false;
+			CformSubmition.click();;;return false;
 			};
 	
 		
@@ -606,24 +606,24 @@ function contactContent()
 	Cform.appendChild(CformSubmition);
 	CformSubmition.type = 'submit';
 	CformSubmition.id = 'submitC';
-	 CformSubmition.value = 'SUBMIT';
+	/*  CformSubmition.value = 'SUBMIT';
 	CformSubmition.classList.add('btn');
 	CformSubmition.classList.add('btn-block');
 	CformSubmition.classList.add('btn-lg'); 
 	CformSubmition.onsubmit=function(){
 			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
-			};
+			}; */
 	
-	/* var btnSub = document.createElement('button');
+	var btnSub = document.createElement('button');
 	Cform.appendChild(btnSub);
 	btnSub.innerHTML = 'SUBMIT'
 	btnSub.classList.add('btn');
 	btnSub.classList.add('btn-block');
 	btnSub.classList.add('btn-lg');
 	btnSub.onclick=function(){
-			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
-			CformSubmition.click();
-			}; */
+			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');
+			CformSubmition.click();;return false;
+			};
 	
 	
 	
