@@ -489,16 +489,31 @@ function requestContent()
 	var newLine = document.createElement('br');
 	Cform.appendChild(newLine);
 	
-	var CformSubmition = document.createElement('input');
+/* 	var CformSubmition = document.createElement('input');
 	Cform.appendChild(CformSubmition);
 	CformSubmition.type = 'submit';
 	CformSubmition.value = 'SUBMIT';
 	CformSubmition.classList.add('btn');
 	CformSubmition.classList.add('btn-block');
-	CformSubmition.classList.add('btn-lg');
-	/* CformSubmition.onclick=function(){
-			showSucess();;return false;
-			}; */
+	CformSubmition.classList.add('btn-lg'); */
+	
+	var CformSubmition = document.createElement('input');
+	Cform.appendChild(CformSubmition);
+	CformSubmition.type = 'submit';
+	CformSubmition.id = 'submitR';	
+	
+	var btnSub = document.createElement('button');
+	Cform.appendChild(btnSub);
+	Cform.innerHTML = 'SUBMIT'
+	Cform.classList.add('btn');
+	Cform.classList.add('btn-block');
+	Cform.classList.add('btn-lg');
+	Cform.onclick=function(){
+			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
+			CformSubmition.click();
+			};
+	
+		
 
 	
 	var newLine = document.createElement('br');
@@ -587,17 +602,26 @@ function contactContent()
 	var newLine = document.createElement('br');
 	Cform.appendChild(newLine);
 	
+	var btnSub = document.createElement('button');
+	Cform.appendChild(btnSub);
+	Cform.innerHTML = 'SUBMIT'
+	Cform.classList.add('btn');
+	Cform.classList.add('btn-block');
+	Cform.classList.add('btn-lg');
+	Cform.onclick=function(){
+			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
+			CformSubmition.click();
+			};
+	
 	var CformSubmition = document.createElement('input');
 	Cform.appendChild(CformSubmition);
 	CformSubmition.type = 'submit';
-	CformSubmition.value = 'SUBMIT';
+	CformSubmition.id = 'submitC';
+	/* CformSubmition.value = 'SUBMIT';
 	CformSubmition.classList.add('btn');
 	CformSubmition.classList.add('btn-block');
-	CformSubmition.classList.add('btn-lg');
-	/* CformSubmition.onclick=function(){
-			showSucess();;return false;
-			};
-	 */
+	CformSubmition.classList.add('btn-lg');  */
+	
 	var newLine = document.createElement('br');
 	CformContainer.appendChild(newLine);
 

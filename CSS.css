@@ -115,3 +115,6 @@ audio::-webkit-media-controls-panel {
   color: black;
 }
 
+#submitR, #submitC{
+	visibility: hidden;
+}
