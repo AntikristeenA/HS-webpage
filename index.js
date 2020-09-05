@@ -97,13 +97,13 @@ transporter.sendMail(mailOptions, function(error, info){
   }
   
 });	
-//routing contact sent
+/* //routing contact sent
      fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
 
-});
+}); */
 
 	
 })
@@ -143,13 +143,13 @@ transporter.sendMail(mailOptions, function(error, info){
 });	
 
 
-//routing request sent
+/* //routing request sent
      fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
 
-});
+}); */
 
 	
 })
