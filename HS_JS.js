@@ -247,7 +247,7 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			btn.onclick=function(){
+			
 			btn.onclick=function(){
 			DL(this.name);;return false;
 			};
@@ -306,7 +306,6 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			btn.onclick=function(){
 			btn.onclick=function(){
 			DL(this.name);;return false;
 			};
