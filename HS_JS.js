@@ -509,7 +509,7 @@ function requestContent()
 	btnSub.classList.add('btn-block');
 	btnSub.classList.add('btn-lg');
 	btnSub.onclick=function(){
-			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.')
+			alert('Your request has been sent!\nWe will get back to You soon.')
 			CformSubmition.click();;;return false;
 			};
 	
@@ -621,7 +621,7 @@ function contactContent()
 	btnSub.classList.add('btn-block');
 	btnSub.classList.add('btn-lg');
 	btnSub.onclick=function(){
-			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');
+			alert('Your contact has been sent!\nWe will get back to You soon.');
 			CformSubmition.click();;return false;
 			};
 	
