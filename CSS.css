@@ -39,6 +39,10 @@ body{
 	visibility:hidden; 
 }
 
+#sucess{
+	visibility:hidden; 
+}
+
 #bigLetters{
 	font-size: 80px;
 	color: white;

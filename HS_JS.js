@@ -496,6 +496,9 @@ function requestContent()
 	CformSubmition.classList.add('btn');
 	CformSubmition.classList.add('btn-block');
 	CformSubmition.classList.add('btn-lg');
+	CformSubmition.onclick=function(){
+			showSucess();;return false;
+			};
 
 	
 	var newLine = document.createElement('br');
@@ -591,6 +594,9 @@ function contactContent()
 	CformSubmition.classList.add('btn');
 	CformSubmition.classList.add('btn-block');
 	CformSubmition.classList.add('btn-lg');
+	CformSubmition.onclick=function(){
+			showSucess();;return false;
+			};
 	
 	var newLine = document.createElement('br');
 	CformContainer.appendChild(newLine);
@@ -605,6 +611,18 @@ function hideAlert()
 {
 	var noFound = document.getElementById('noFound');
 	noFound.style.visibility='hidden'; 
+}
+
+function hideSucess()
+{
+	var sucess = document.getElementById('sucess');
+	sucess.style.visibility='hidden'; 
+}
+
+function showSucess()
+{
+	var sucess = document.getElementById('sucess');
+	sucess.style.visibility='show'; 
 }
 
 function SearchErraser()
