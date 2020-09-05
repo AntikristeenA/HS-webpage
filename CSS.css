@@ -44,6 +44,7 @@ body{
 	color: white;
 	line-height: 0.9;
 	margin-left:20px;
+	font-weight: bold;
 }
 
 #mediumLetters{
@@ -51,12 +52,17 @@ body{
 	color: grey;
 	line-height: 0.99;
 	margin-left:20px;
+	font-weight: bold;
 }
 
 #normalLetters{
 	font-size: 20px;
 	color: white;
 	margin-left:20px;
+}
+
+#CformContainer{
+	
 }
 
 #LMButton{

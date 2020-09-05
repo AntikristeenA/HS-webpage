@@ -355,6 +355,252 @@ function category(cat)
 	
 }
 
+function homeContent()
+{
+	var dynamicContent = dynamicContedCleanUp();
+	
+	var Cform = document.createElement('div');
+	dynamicContent.appendChild(Cform);
+	Cform.id='bigLetters';
+	Cform.innerHTML ='Free';
+	
+	var newLine = document.createElement('br');
+	dynamicContent.appendChild(newLine);
+	
+	var Dform = document.createElement('div');
+	dynamicContent.appendChild(Dform);
+	Dform.id='mediumLetters';
+	Dform.innerHTML ='Sound Library';
+	
+	var newLine = document.createElement('br');
+	dynamicContent.appendChild(newLine);
+	
+	var Eform = document.createElement('div');
+	dynamicContent.appendChild(Eform);
+	Eform.id='normalLetters';
+	Eform.innerHTML ='Free sound library and audio service for Your videos, commercials, animations, games...';
+	
+	var newLine = document.createElement('br');
+	dynamicContent.appendChild(newLine);
+	var newLine = document.createElement('br');
+	dynamicContent.appendChild(newLine);
+	var newLine = document.createElement('br');
+	dynamicContent.appendChild(newLine);
+	
+	var rowEl = document.createElement('div');
+	dynamicContent.appendChild(rowEl);
+	rowEl.classList.add('row');
+	
+	var rowElcol3 = document.createElement('div');
+	rowEl.appendChild(rowElcol3);
+	rowElcol3.classList.add('col-sm-2');
+	
+	var rowElcol = document.createElement('div');
+	rowEl.appendChild(rowElcol);
+	rowElcol.classList.add('col-bg-6');
+	
+	var rowElButton = document.createElement('button');
+	rowElcol.appendChild(rowElButton);
+	rowElButton.classList.add('btn');
+	rowElButton.innerHTML='Learn more';
+	rowElButton.id='LMButton';
+	rowElButton.onclick=function(){
+		document.getElementById('about').click();
+			;;return false;
+	};
+	
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+	var newLine = document.createElement('br');
+	rowElcol.appendChild(newLine);
+
+	
+	var rowElcol2 = document.createElement('div');
+	rowEl.appendChild(rowElcol2);
+	rowElcol2.classList.add('col-sm-4');
+	
+}
+
+function requestContent()
+{
+	var dynamicContent = dynamicContedCleanUp();
+	
+	var CformContainer = document.createElement('div');
+	dynamicContent.appendChild(CformContainer);
+	CformContainer.id='CformContainer';
+	CformContainer.classList.add('float-right');
+	
+	var Cform = document.createElement('form');
+	CformContainer.appendChild(Cform);
+	Cform.action='/submitr';
+	Cform.method='post';
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformLabelMail = document.createElement('label');
+	Cform.appendChild(CformLabelMail);
+	CformLabelMail.innerHTML = 'Your Email:';
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformMail = document.createElement('input');
+	Cform.appendChild(CformMail);
+	CformMail.type = 'text';
+	CformMail.id = 'email';
+	CformMail.name = 'email';
+	CformMail.classList.add('form-control-lg');
+	CformMail.classList.add('form-control');
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformLabelDescription = document.createElement('label');
+	Cform.appendChild(CformLabelDescription);
+	CformLabelDescription.innerHTML = 'Sound Description:';
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformDescription = document.createElement('textarea');
+	Cform.appendChild(CformDescription);
+	CformDescription.type = 'text';
+	CformDescription.id = 'description';
+	CformDescription.name = 'description';
+	CformDescription.style="height:200px; width:400px"
+	CformDescription.classList.add('form-control-lg');
+	CformDescription.classList.add('form-control');
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformSubmition = document.createElement('input');
+	Cform.appendChild(CformSubmition);
+	CformSubmition.type = 'submit';
+	CformSubmition.value = 'SUBMIT';
+	CformSubmition.classList.add('btn');
+	CformSubmition.classList.add('btn-block');
+	CformSubmition.classList.add('btn-lg');
+
+	
+	var newLine = document.createElement('br');
+	CformContainer.appendChild(newLine);
+	var newLine = document.createElement('br');
+	CformContainer.appendChild(newLine);
+	var newLine = document.createElement('br');
+	CformContainer.appendChild(newLine);
+	var newLine = document.createElement('br');
+	CformContainer.appendChild(newLine);
+	var newLine = document.createElement('br');
+	CformContainer.appendChild(newLine);
+	
+}
+
+
+
+function contactContent()
+{
+	var dynamicContent = dynamicContedCleanUp();
+	
+	var CformContainer = document.createElement('div');
+	dynamicContent.appendChild(CformContainer);
+	CformContainer.id='CformContainer';
+	CformContainer.classList.add('float-right');
+	
+	var Cform = document.createElement('form');
+	CformContainer.appendChild(Cform);
+	Cform.action='/submit';
+	Cform.method='post';
+	
+	var CformLabel = document.createElement('label');
+	Cform.appendChild(CformLabel);
+	CformLabel.innerHTML = 'Your Name:';
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformName = document.createElement('input');
+	Cform.appendChild(CformName);
+	CformName.type = 'text';
+	CformName.id = 'name';
+	CformName.name = 'name';
+	CformName.classList.add('form-control-lg');
+	CformName.classList.add('form-control');
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformLabelMail = document.createElement('label');
+	Cform.appendChild(CformLabelMail);
+	CformLabelMail.innerHTML = 'Your Email:';
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformMail = document.createElement('input');
+	Cform.appendChild(CformMail);
+	CformMail.type = 'text';
+	CformMail.id = 'email';
+	CformMail.name = 'email';
+	CformMail.classList.add('form-control');
+	CformMail.classList.add('form-control-lg');
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformLabelDescription = document.createElement('label');
+	Cform.appendChild(CformLabelDescription);
+	CformLabelDescription.innerHTML = 'Sound Description:';
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformDescription = document.createElement('textarea');
+	Cform.appendChild(CformDescription);
+	CformDescription.type = 'text';
+	CformDescription.id = 'description';
+	CformDescription.name = 'description';
+	CformDescription.style="height:200px; width:400px"
+	CformDescription.classList.add('form-control');
+	CformDescription.classList.add('form-control-lg');
+	
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	var newLine = document.createElement('br');
+	Cform.appendChild(newLine);
+	
+	var CformSubmition = document.createElement('input');
+	Cform.appendChild(CformSubmition);
+	CformSubmition.type = 'submit';
+	CformSubmition.value = 'SUBMIT';
+	CformSubmition.classList.add('btn');
+	CformSubmition.classList.add('btn-block');
+	CformSubmition.classList.add('btn-lg');
+	
+	var newLine = document.createElement('br');
+	CformContainer.appendChild(newLine);
+
+
+	
+}
+
+
+
 function hideAlert()
 {
 	var noFound = document.getElementById('noFound');
@@ -429,6 +675,16 @@ function DL(filename){
             window.URL.revokeObjectURL(url);
         }
     })
+}
+
+function dynamicContedCleanUp(){
+	document.getElementById('dynamicContent').remove();
+	var dynamicContent = document.createElement('div');
+	var contentContainer = document.getElementById('contentContainer');
+	contentContainer.appendChild(dynamicContent);
+	dynamicContent.id='dynamicContent';
+	
+	return(dynamicContent);
 }
 
 

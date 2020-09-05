@@ -7,7 +7,6 @@ var AWS = require('aws-sdk');
 var uuid = require('uuid');
 
 
-//var formidable = require('formidable');
 
 var nodemailer = require('nodemailer');
 var url = require('url');
@@ -22,48 +21,7 @@ const bodyParser = require('body-parser')
 app.use(express.urlencoded({extended: true}))
 
 
-//download
 
- //download
- 
-
- 
-/*  app.get('/download/', (req, res) => {
-	 var url = require('url');
-//Parse the address:
-var q = url.parse(adr, true);
-  res.download('./demo.pdf');
-})
-
-
-
-app.get('/download', (req, res) =>{
-	
-	const fname = req.body.nameDld
-	res.download('https://antikristeena.github.io/HS-webpage/Sounds/'+fname+'.mp3');
-	
-	
-});
- */
-/* 
-//download
-var download = function(url, dest, cb) {
-  var file = fs.createWriteStream(dest);
-  http.get(url, function(response) {
-    response.pipe(file);
-    file.on('finish', function() {
-      file.close(cb);
-    });
-  });
-}
-app.get(fname, function (req, res) {
-    var file = 'https://antikristeena.github.io/HS-webpage/Sounds/'+fname
-	var dest ='Downloads'
-    return download(file, dest);
-});
-
-
- */
 
 //Contact mail
 app.post('/submit', (req, res) =>{
@@ -97,8 +55,16 @@ transporter.sendMail(mailOptions, function(error, info){
   }
   
 });	
-//routing contact sent
+/* //routing contact sent
      fs.readFile('submitc.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+
+}); */
+
+//routing contact sent
+     fs.readFile('/', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -143,8 +109,15 @@ transporter.sendMail(mailOptions, function(error, info){
 });	
 
 
-//routing request sent
+/* //routing request sent
      fs.readFile('submitr.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+
+}); */
+//routing request sent
+     fs.readFile('/', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -167,7 +140,7 @@ app.get('/', (req, res) => {
 });
 
 
-
+/* 
 //routing contact
 app.get('/contact', function (req, res) {
      fs.readFile('contact.html', function(err, data) {
@@ -205,27 +178,9 @@ app.get('/about', function (req, res) {
     return res.end();
 });
 });
-
-
-/* //SSL certificate
-const hostname = 'howsounds.me';
-const httpsPort = 443;
-
-const httpsOptions = {
-	cert: fs.readFileSync('CS/server.crt'),
-	key: fs.readFileSync('CS/server.key')
-};
-const httpsServer = https.createServer(httpsOptions, app);
-
-httpsServer.listen(httpsPort, hostname);
  */
 
 
-
-
-
-
- 
 
 //server
 const port = process.env.PORT || '8080';

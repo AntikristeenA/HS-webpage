@@ -28,7 +28,7 @@
 		
 			<div class="col-md-3">
 				<div id="pictureD" class="container-fluid">
-					<a href=https://howsounds.me><img class="img-fluid" src="HS.PNG" alt="Howsounds picture"></a>
+					<a onclick="homeContent()"><img class="img-fluid" src="HS.PNG" alt="Howsounds picture"></a>
 				</div>
 			</div>
 			
@@ -37,8 +37,10 @@
 				<div class=' float-md-right'>
 				<span id='menu'>
 				  <button id="Requestbutton" class='btn '  >MUSIC (beta)</button>
-				  <button id="Requestbutton" class='btn ' onclick="document.location='request'" >REQUEST SOUND</button>
-				  <button id="contact" class='btn ' onclick="document.location='contact'" >CONTACT</button>
+				  <!-- <button id="Requestbutton" class='btn ' onclick="document.location='request'" >REQUEST SOUND</button> -->
+				  <button id="Requestbutton" class='btn ' onclick="requestContent()" >REQUEST SOUND</button>
+				  <!-- <button id="contact" class='btn ' onclick="document.location='contact'" >CONTACT</button> -->
+				  <button id="contact" class='btn ' onclick="contactContent()" >CONTACT</button>
 				  <button id="about" class='btn ' onclick="document.location='about' "  >ABOUT</button>
 				  </span>
 			</div>
@@ -80,35 +82,37 @@
 		
 		
 		<div class='row'>
-			<div class='col-lg-6'>
-				<div id='bigLetters'><b>Free</b></div>
-				<br>
-				<div id='mediumLetters'><b>Sound Library</b></div>
-				<br>
-				<div id='normalLetters'>Free sound library and audio service for Your videos, commercials, animations, games...</div>
-				<br>
-				<br>
-				<br>
-				
-				<div class='row'>
-					<div class='col-sm-2'>
-						
-					</div>
-					<div class='col-bg-6'>
-						<button id='LMButton' class='btn '  onclick="document.location='about' " >Learn more</button>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
+			<div class='col-lg-6' id='contentContainer'>
+				<div id='dynamicContent'>
+					<div id='bigLetters'><b>Free</b></div>
+					<br>
+					<div id='mediumLetters'><b>Sound Library</b></div>
+					<br>
+					<div id='normalLetters'>Free sound library and audio service for Your videos, commercials, animations, games...</div>
+					<br>
+					<br>
+					<br>
 					
-				<br><br>
-				<br>
+					<div class='row'>
+						<div class='col-sm-2'>
+							
+						</div>
+						<div class='col-bg-6'>
+							<button id='LMButton' class='btn '  onclick="document.location='about' " >Learn more</button>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+						
+					<br><br>
+					<br>
+						</div>
+						<div class='col-sm-4'>
+						</div>
+					
 					</div>
-					<div class='col-sm-4'>
-					</div>
-				
 				</div>
 
 			</div>
