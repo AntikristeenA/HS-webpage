@@ -98,7 +98,7 @@ transporter.sendMail(mailOptions, function(error, info){
   
 });	
 //routing contact sent
-     fs.readFile('submitc.html', function(err, data) {
+     fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -144,7 +144,7 @@ transporter.sendMail(mailOptions, function(error, info){
 
 
 //routing request sent
-     fs.readFile('submitr.html', function(err, data) {
+     fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
@@ -168,7 +168,7 @@ app.get('/', (req, res) => {
 
 
 
-//routing contact
+/* //routing contact
 app.get('/contact', function (req, res) {
      fs.readFile('contact.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
@@ -187,7 +187,7 @@ app.get('/request', function (req, res) {
     return res.end();
 });
 });
-
+ */
 //routing index
 app.get('/index', function (req, res) {
      fs.readFile('index.html', function(err, data) {
@@ -197,7 +197,7 @@ app.get('/index', function (req, res) {
 });
 });
 
-//routing about
+/* //routing about
 app.get('/about', function (req, res) {
      fs.readFile('about.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
@@ -205,7 +205,7 @@ app.get('/about', function (req, res) {
     return res.end();
 });
 });
-
+ */
 
 /* //SSL certificate
 const hostname = 'howsounds.me';
