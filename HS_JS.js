@@ -56,7 +56,7 @@ function searchF()
 			//adding button
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
-			//btn.onclick="DL('soundsList[i].name')";
+			btn.onclick=DL(soundsList[i].name);
 			btn.name=soundsList[i].name;
 			btn.appendChild(btnTxt);
 			
@@ -243,7 +243,7 @@ function category(cat)
 			var btn = document.createElement('button');
 			var btnTxt = document.createTextNode("Download");
 			btn.name=soundsList[i].name;
-			btn.onclick="DL('soundsList[i].name')";
+			btn.onclick=DL(soundsList[i].name);
 			btn.appendChild(btnTxt);
 			
 			colBR.appendChild(btn);
