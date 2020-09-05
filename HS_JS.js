@@ -168,7 +168,7 @@ function searchF()
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		var Bo = document.getElementById('body');
+		var Bo = document.getElementById('bottomD');
 		Bo.appendChild(dscript);
 	
 
@@ -332,13 +332,13 @@ function category(cat)
 		}
 	}
 	
-/* 	//loading script for downloading
+	//loading script for downloading
 	var dscript = document.createElement('script');
 		
 		dscript.src='https://antikristeena.github.io/HS-webpage/downloaddoc.js'
 		//dl.appendChild(btn);
-		var Bo = document.getElementById('body');
-		Bo.appendChild(dscript); */
+		var Bo = document.getElementById('bottomD');
+		Bo.appendChild(dscript);
 	
 }
 

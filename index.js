@@ -24,6 +24,17 @@ app.use(express.urlencoded({extended: true}))
 
 //download
 
+ //download
+ 
+
+ 
+/*  app.get('/download/', (req, res) => {
+	 var url = require('url');
+//Parse the address:
+var q = url.parse(adr, true);
+  res.download('./demo.pdf');
+})
+
 
 
 app.get('/download', (req, res) =>{
@@ -33,7 +44,7 @@ app.get('/download', (req, res) =>{
 	
 	
 });
-
+ */
 /* 
 //download
 var download = function(url, dest, cb) {
@@ -209,6 +220,12 @@ const httpsServer = https.createServer(httpsOptions, app);
 httpsServer.listen(httpsPort, hostname);
  */
 
+
+
+
+
+
+ 
 
 //server
 const port = process.env.PORT || '8080';
