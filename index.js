@@ -97,7 +97,7 @@ transporter.sendMail(mailOptions, function(error, info){
   }
   
 });	
- //routing contact sent
+/*  //routing contact sent
      fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
@@ -105,7 +105,12 @@ transporter.sendMail(mailOptions, function(error, info){
     return res.end();
 
 }); 
-
+ */
+ 
+  //routing contact sent
+   
+	res.send(200,'showAlert');
+    return res.end();
 	
 })
 
@@ -144,14 +149,19 @@ transporter.sendMail(mailOptions, function(error, info){
 });	
 
 
- //routing request sent
+ /* //routing request sent
      fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
 	//res.send(200,'showAlert');
+    return res.end(); 
+}); 	*/
+	//routing request sent
+
+	res.send(200,'showAlert');
     return res.end();
 
-}); 
+
 
 	
 })
