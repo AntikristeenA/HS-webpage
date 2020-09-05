@@ -463,7 +463,7 @@ function requestContent()
 	Cform.appendChild(CformMail);
 	CformMail.type = 'text';
 	CformMail.id = 'email';
-	CformMail.name = 'email';
+	CformMail.name = 'emailr';
 	CformMail.classList.add('form-control-lg');
 	CformMail.classList.add('form-control');
 	
@@ -481,7 +481,7 @@ function requestContent()
 	Cform.appendChild(CformDescription);
 	CformDescription.type = 'text';
 	CformDescription.id = 'description';
-	CformDescription.name = 'description';
+	CformDescription.name = 'describer';
 	CformDescription.style="height:200px; width:400px"
 	CformDescription.classList.add('form-control-lg');
 	CformDescription.classList.add('form-control');
