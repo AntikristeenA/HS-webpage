@@ -504,11 +504,11 @@ function requestContent()
 	
 	var btnSub = document.createElement('button');
 	Cform.appendChild(btnSub);
-	Cform.innerHTML = 'SUBMIT'
-	Cform.classList.add('btn');
-	Cform.classList.add('btn-block');
-	Cform.classList.add('btn-lg');
-	Cform.onclick=function(){
+	btnSub.innerHTML = 'SUBMIT'
+	btnSub.classList.add('btn');
+	btnSub.classList.add('btn-block');
+	btnSub.classList.add('btn-lg');
+	btnSub.onclick=function(){
 			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
 			CformSubmition.click();
 			};
@@ -602,17 +602,6 @@ function contactContent()
 	var newLine = document.createElement('br');
 	Cform.appendChild(newLine);
 	
-	var btnSub = document.createElement('button');
-	Cform.appendChild(btnSub);
-	Cform.innerHTML = 'SUBMIT'
-	Cform.classList.add('btn');
-	Cform.classList.add('btn-block');
-	Cform.classList.add('btn-lg');
-	Cform.onclick=function(){
-			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
-			CformSubmition.click();
-			};
-	
 	var CformSubmition = document.createElement('input');
 	Cform.appendChild(CformSubmition);
 	CformSubmition.type = 'submit';
@@ -621,6 +610,19 @@ function contactContent()
 	CformSubmition.classList.add('btn');
 	CformSubmition.classList.add('btn-block');
 	CformSubmition.classList.add('btn-lg');  */
+	
+	var btnSub = document.createElement('button');
+	Cform.appendChild(btnSub);
+	btnSub.innerHTML = 'SUBMIT'
+	btnSub.classList.add('btn');
+	btnSub.classList.add('btn-block');
+	btnSub.classList.add('btn-lg');
+	btnSub.onclick=function(){
+			alert('Your request has been sent!<br> If your contact is correct, we will get back to You soon.');;return false;
+			CformSubmition.click();
+			};
+	
+	
 	
 	var newLine = document.createElement('br');
 	CformContainer.appendChild(newLine);
