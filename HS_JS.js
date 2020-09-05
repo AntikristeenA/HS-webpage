@@ -412,7 +412,8 @@ function searchValue(){
 function DL(filename){
 
     $.ajax({
-        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
+        //url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
+		url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+filename+'.mp3',
         method: 'GET',
         xhrFields: {
             responseType: 'blob'
