@@ -101,7 +101,7 @@ transporter.sendMail(mailOptions, function(error, info){
      fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
-	res.send(200,'showAlert');
+	//res.send(200,'showAlert');
     return res.end();
 
 }); 
@@ -148,7 +148,7 @@ transporter.sendMail(mailOptions, function(error, info){
      fs.readFile('index.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
-	res.send(200,'showAlert');
+	//res.send(200,'showAlert');
     return res.end();
 
 }); 
