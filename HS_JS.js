@@ -724,8 +724,8 @@ function searchValue(){
 function DL(filename){
 
     $.ajax({
-        //url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
-		url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+filename+'.mp3',
+        url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Downloads/'+filename+'.howsounds',
+		//url: 'https://howsoundsbucket.s3.eu-central-1.amazonaws.com/Sounds/'+filename+'.mp3',
 		headers: {  'Access-Control-Allow-Origin': 'https://hsounds.herokuapp.com/' },
         method: 'GET',
         xhrFields: {
