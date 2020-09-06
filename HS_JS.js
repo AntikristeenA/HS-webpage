@@ -406,6 +406,9 @@ function homeContent()
 	rowElButton.id='LMButton';
 	rowElButton.onclick=function(){
 		document.getElementById('about').click();
+		//got top because of button Learn More
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 			;;return false;
 	};
 	
@@ -419,14 +422,14 @@ function homeContent()
 	rowElcol.appendChild(newLine);
 	var newLine = document.createElement('br');
 	rowElcol.appendChild(newLine);
-	var newLine = document.createElement('br');
+/* 	var newLine = document.createElement('br');
 	rowElcol.appendChild(newLine);
 	var newLine = document.createElement('br');
 	rowElcol.appendChild(newLine);
 	var newLine = document.createElement('br');
 	rowElcol.appendChild(newLine);
 	var newLine = document.createElement('br');
-	rowElcol.appendChild(newLine);
+	rowElcol.appendChild(newLine); */
 
 	
 	var rowElcol2 = document.createElement('div');
@@ -583,7 +586,7 @@ function contactContent()
 	
 	var CformLabelDescription = document.createElement('label');
 	Cform.appendChild(CformLabelDescription);
-	CformLabelDescription.innerHTML = 'Sound Description:';
+	CformLabelDescription.innerHTML = 'Describe what You need for Your project:';
 	
 	var newLine = document.createElement('br');
 	Cform.appendChild(newLine);
@@ -629,17 +632,33 @@ function contactContent()
 	
 	var newLine = document.createElement('br');
 	CformContainer.appendChild(newLine);
+	
+	//got top because of button Contact us
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
 
 	
 }
 
-
+function aboutContent(){
+	var dynamicContent = dynamicContedCleanUp();
+	
+	var textContainer = document.createElement('div');
+	dynamicContent.appendChild(textContainer);
+	textContainer.id ='textContainer';
+	textContainer.innerHTML='Howsounds derived from college audio porn project. We needed specific sounds which were hard to find, so we made them ourselves.'
+}
 
 function hideAlert()
 {
 	var noFound = document.getElementById('noFound');
 	noFound.style.visibility='hidden'; 
+}
+
+function soundRequestAlert(){
+	hideAlert();
+	requestContent();
 }
 
 function hideSucess()
@@ -737,7 +756,7 @@ function dynamicContedCleanUp(){
 
 function copyrightF() {
 	
-	
+	homeContent();
 	
   var d = new Date();
   var n = d.getFullYear();

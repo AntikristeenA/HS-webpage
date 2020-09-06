@@ -28,7 +28,7 @@
 		
 			<div class="col-md-3">
 				<div id="pictureD" class="container-fluid">
-					<a onclick="homeContent()"><img class="img-fluid" src="HS.PNG" alt="Howsounds picture"></a>
+					<a onclick="homeContent()"><img class="img-fluid linkLook" src="https://antikristeena.github.io/HS-webpage/HS.PNG" alt="Howsounds picture"></a>
 				</div>
 			</div>
 			
@@ -36,12 +36,12 @@
 
 				<div class=' float-md-right'>
 				<span id='menu'>
-				  <button id="Requestbutton" class='btn '  >MUSIC (beta)</button>
+				  <button id="Requestbutton" class='btn '  >MUSIC (soon)</button>
 				  <!-- <button id="Requestbutton" class='btn ' onclick="document.location='request'" >REQUEST SOUND</button> -->
 				  <button id="Requestbutton" class='btn ' onclick="requestContent()" >REQUEST SOUND</button>
 				  <!-- <button id="contact" class='btn ' onclick="document.location='contact'" >CONTACT</button> -->
 				  <button id="contact" class='btn ' onclick="contactContent()" >CONTACT</button>
-				  <button id="about" class='btn ' onclick="document.location='about' "  >ABOUT</button>
+				  <button id="about" class='btn ' onclick="aboutContent()"  >ABOUT</button>
 				  </span>
 			</div>
 			</div>
@@ -59,13 +59,8 @@
 		<div id='noFoundContainer'>
 			<div id='noFound' class="alert alert-dismissible alert-secondary ">
 				<button type="button"   class="close"  onclick='hideAlert()' >&times;</button>
-				 Unfortunatelly we couldn't find requested tag in our database. <br> Please send us a "<i>Sound request</i>"!  
+				 Unfortunatelly we couldn't find requested tag in our database. <br> <span>Please send us a <a class='linkLook' onclick='soundRequestAlert()'>Sound request</a>! </span>
 			</div>
-			<div id='sucess' class="alert alert-dismissible alert-secondary ">
-				<button type="button"   class="close"  onclick='hideSucess()' >&times;</button>
-				 Your request has been sent! If your contact is correct, we will get back to You soon.  
-			</div>
-			
 		</div>
 		
 		
@@ -74,7 +69,7 @@
 			<button id='closeButton' class='btn mr-3 mt-2' onclick='SearchErraser()'>&times;</button>
 		</div>
 			<!-- <div class='row ml-4' id='accordion'> -->
-				<div class='row mx-auto mt-5 mb-4' >
+				<div class='row mx-auto mt-1 mb-4' >
 				
 					<div id='searchField' class="back mx-auto">
 						<div id='searchFieldE'>
@@ -89,7 +84,7 @@
 		<div class='row'>
 			<div class='col-lg-6' id='contentContainer'>
 				<div id='dynamicContent'>
-					<div id='bigLetters'><b>Free</b></div>
+				<!-- 	<div id='bigLetters'><b>Free</b></div>
 					<br>
 					<div id='mediumLetters'><b>Sound Library</b></div>
 					<br>
@@ -117,7 +112,7 @@
 						<div class='col-sm-4'>
 						</div>
 					
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -203,28 +198,48 @@
 		</div>
 	
 		<div id='canNotFindSound'>
-		<br>
-		<br>
-		<br>
-			<div class='row'>
-				<div class='col-md-7'>
-					<p id='mediumLetters'> <b>Can't find the 
-					<br>sound you wanted...</b></p>
-					<p id='normalLetters'> Do You want special, personalized sound?
+		
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='row'>
+					<div class='col-md-12'>
 					<br>
-					- feel free to send us a sund request!</p>
+		<br>
+		<br>
+
+						<p id='mediumLettersWhite'> <b> Need something special?</b></p>
+						<br>
+						<p id='normalLetters2'>Do You Need <strong>audio editing</strong>, or <strong>music</strong> for your project?<br>Feel free to contac us. </p>
+					</div>
 				</div>
-				<div class='col-sm-5'>
+				<br>
+				<br>
+
+				<div class='row'>
+					<div class='col-sm-3'>
+								
+					</div>
+					<div class='col-bg-9'>
+						<button id='ContactUsButton' class='btn '  onclick="contactContent()" >Contact us!</button>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
 					
+					</div>
+							
+						
 				</div>
 			</div>
-		
-		
+			<div class='col-md-6' id='BkgPicture'>
+			</div>
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
+		</div>
+		
+		
 		<div id='whiteLine'>
 		<br>
 		</div>
@@ -232,7 +247,7 @@
 		<div id='bottomD' class="row back">
 			<div class='col-lg-4'>
 				<div id="pictureD" class="container-fluid">
-					<img class="img-fluid" src="HSBottom.PNG" alt="Howsounds picture">
+					<img class="img-fluid" src="https://antikristeena.github.io/HS-webpage/HSBottom.PNG" alt="Howsounds picture">
 				</div>
 			</div>
 			 <div class="col-lg-4">
