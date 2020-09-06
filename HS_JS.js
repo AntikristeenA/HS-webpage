@@ -647,7 +647,7 @@ function aboutContent(){
 	var textContainer = document.createElement('div');
 	dynamicContent.appendChild(textContainer);
 	textContainer.id ='textContainer';
-	textContainer.innerHTML='Howsounds derived from college audio porn project. We needed specific sounds which were hard to find, so we made them ourselves.'
+	textContainer.innerHTML='<div class="row"><div class="col-sm-1"></div><div class="col-sm-11"><p><span class="aboutTitles"> Our vision:</span> <br>is that Howsounds become a platform that contains everything regarding sound. For now we have free sound library and audio service. Audio service is service of sound-design, editing and mixing sounds and whole audio tracks for our customers. Every day we are adding new free sounds in our library. We are currently working on implementation of royalty free music in our website. And there will be more! </p><p> <span class="aboutTitles">Our story:</span> <br>After college audio porn project, we started getting more requests regarding audio editing and sound design. As the demand grew, we decided to start Howsounds - an official webpage directed towards easier communication between us, Howsounds, and our customers.</p><p> <strong>On our website, we are not featuring any content we made for our customers, just sounds we made exclusively for the puropose of sharing for free on the Howsosunds official website.</strong></p><p><span class="aboutTitles">Welcome to Howsounds!</span><br><br><br></p></div></div>'
 }
 
 function hideAlert()

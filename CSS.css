@@ -13,7 +13,7 @@ body{
 
 #playerErasser{
 	background-image: url('HSm.PNG');
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 #BkgPicture{
@@ -71,7 +71,7 @@ body{
 	font-weight: bold;
 }
 
-#mediumLettersWhite{
+#mediumLettersWhite {
 	font-size: 60px;
 	color: white;
 	line-height: 0.99;
@@ -89,6 +89,13 @@ body{
 	font-size: 20px;
 	color: white;
 	margin-left:35px;
+}
+
+.aboutTitles{
+	font-size: 30px;
+	color: white;
+	
+	font-weight: bold;
 }
 
 
