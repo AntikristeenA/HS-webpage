@@ -1,6 +1,10 @@
 
 var soundsList = [
 	{
+		name:"roar2",
+		tag:["animal", "roar", 'roaring']
+	},
+	{
 		name:"bed movment",
 		tag:['house', "bed", "cracking", "crunching", 'popping','crack', 'crunch', 'pop']
 	},
