@@ -1,6 +1,34 @@
 
 var soundsList = [
 	{
+		name:"Walking on a leaves",
+		tag:["outdoor", "leaves", 'forest', "autumn", "nature", "walking", "walk"]
+	},
+	{
+		name:"Lightina a match",
+		tag:["human", "fire", 'match', "matches", "lighting", "smoke", "smoking"]
+	},	
+	{
+		name:"Leaves",
+		tag:["outdoor", "leaves", 'forest', "autumn", "nature"]
+	},
+	{
+		name:"Leaves falling",
+		tag:["outdoor", "leaves", 'forest', "autumn", "nature"]
+	},
+	{
+		name:"Breaking",
+		tag:["breaking", "glass", 'splinter', "crashing", "break"]
+	},
+	{
+		name:"Breaking glass",
+		tag:["breaking", "glass", 'splinter', "crashing", "break"]
+	},
+	{
+		name:"Breaking branches",
+		tag:["breaking", "snapping", 'popping', "break", "snap", 'pop']
+	},
+	{
 		name:"roar2",
 		tag:["animal", "roar", 'roaring']
 	},
